@@ -30,6 +30,24 @@ h4{
     font-size: 1.2em;
 }
 
+ol.h3list {
+    list-style: none;
+    counter-reset: h3-counter;
+}
+
+ol.h3list > li {
+    counter-increment: h3-counter;
+}
+
+ol.h3list > li::before{
+    content: counter(h3-counter) "";
+    color: #69F;
+    font-size: 1.4em;
+    float: left;
+    position: relative;
+    right: 1em;
+}
+
 footer > p{
     font-size: 0.8em;
 }
