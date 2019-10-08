@@ -1,9 +1,9 @@
 :root {
-    --lys-bakgrunn: #EAE7DC;
-    --beige-bakgrunn: #D8C3A5;
-    --graa: #8E8D8A;
-    --lys-roed: #E98074;
-    --hoved-roed: #E85A4F;
-    --nesten-svart: #333333;
-    --nesten-hvit: #F5F4ED;
+    --light-bg: #EAE7DC;
+    --beige-bg: #D8C3A5;
+    --gray: #8E8D8A;
+    --light-red: #E98074;
+    --main-red: #E85A4F;
+    --dark: #333333;
+    --light: #F5F4ED;
 }

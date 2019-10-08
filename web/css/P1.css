@@ -9,6 +9,7 @@ html{
 body{
     max-width: 800px;
     margin-left: 100px;
+    counter-reset: figcounter;
 }
 
 h1{
@@ -30,6 +31,10 @@ h4{
     font-size: 1.2em;
 }
 
+blockquote{
+    margin-left:2em;
+}
+
 ol.h3list {
     list-style: none;
     counter-reset: h3-counter;
@@ -48,11 +53,81 @@ ol.h3list > li::before{
     right: 1em;
 }
 
+ul.colors{
+    list-style: none;
+}
+
+ul.colors>li {
+    position: relative;
+    right: 15px;
+}
+
+ul.colors>li>span{
+    position: relative;
+    right: 10px;
+    top: 4px;
+    display:inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius:5px;
+}
+
 footer > p{
     font-size: 0.8em;
+    font-weight: bold;
 }
 
 img{
     display:block;
     max-width: 100%;
+    max-height: 512px;
+    margin:auto;
+}
+
+figcaption{
+    counter-increment: figcounter;
+}
+
+figcaption:before{
+    content:"Figure " counter(figcounter) ": ";
+}
+
+table{
+    border-spacing: 0;
+}
+
+th{
+    border-bottom: solid 1px #EEE;
+}
+
+th:nth-child(1){
+    min-width: 100px;
+}
+
+th:nth-child(2){
+    min-width: 250px;
+}
+
+th:nth-child(3){
+    min-width: 100px;
+}
+
+th:nth-child(4){
+    min-width: 220px;
+}
+
+td{
+    vertical-align: top;
+    padding:5px;
+}
+
+tr:nth-child(odd){
+    background: #333;
+}
+
+tr:nth-child(even){
+    background: #444;
+}
+
+span.color{
 }

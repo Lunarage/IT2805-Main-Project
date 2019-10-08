@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
 
     <link rel="stylesheet" type="text/css" href="css/P1.css" />
-    <title>Design</title>
+    <title>P2 - Design</title>
 
 </head>
 <body>
@@ -15,110 +15,322 @@
     <p>Adrian, Anders, Kia, Mange, Oda</p>
 </header>
 
-<section>
+<section><!-- Our Client -->
     <h2>Our Client</h2>
     <h4>Client: Arkivet at Studentersamfundet</h4>
     <h4>Contact person: Oda Sofie Øien Sundet, Leader of Arkivet</h4>
 </section>
 
-<section>
-    <h2>Purpose and goals</h2>
+<section><!-- Purpose, goals and audience -->
+    <h2>Purpose, goals and audience</h2>
     <p>
-    The website's purpose is to make the archive more accessible and help strengthening their presence at Studentersamfundet.
-    One specific goal is to create a platform where former and older members of Studentersamfundet can help identify old pictures and audio clips from old meetings etc.
-    Another goal is to create a landing page for people who generally want to contribute to the preservation of the history of Studentersamfundet.
+        The website's purpose is to make the archive more accessible and help strengthening their presence at Studentersamfundet.
+        One specific goal is to create a platform where former and older members of Studentersamfundet can help identify old pictures and audio clips from old meetings etc.
+        Another goal is to create a page for people who generally want to contribute to the preservation of the history of Studentersamfundet.
     </p>
-    <h2>Audience</h2>
     <p>
-    The websites main audience will be the current and former members of Studentersamfundet and anyone else that might be interested in its history.
-    This audience includes people of all ages, from young adults to senior citizens.
-    This can be challenging as young people and old people interact with webpages in different ways.
+        The websites main audience will be the current and former members of Studentersamfundet and anyone else that might be interested in its history.
+        This audience includes people of all ages, from young adults to senior citizens.
+        This can be challenging as young people and old people interact with webpages in different ways.
     </p>
 </section>
 
-<section>
+<section><!-- Navigational Structure -->
     <h2>Navigational Structure</h2>
     <p>
-    All the pages on this site will contain the navigation bar (menu).
+        All the pages on this site will have the navigation bar (menu) included on the top of the page.
+        This means that all pages link all pages with a few exceptions: the galleries will be subdivided into categories not directly accessible from the menu.
     </p>
-    <img src='media/images/navigational_structure.jpg' />
+    <p>
+        We have chosen this clique structure to make every page accessible in as few clicks as possible. As this site has relatively few pages, this choice makes it tidier and easier to navigate.
+    </p>
+    <figure>
+        <img src='design/navigational_structure.jpg' />
+        <figcaption>Navigational Structure</figcaption>
+    </figure>
 </section>
 
-<section>
+<section><!-- Page Layout and Appearance -->
     <h2>Page Layout and Appearance</h2>
+    <p>
+
+    </p>
+    <figure>
+        <img src="design/desktop-empty.png" alt="Mockup for generic features">
+        <figcaption>Mockup for generic features (Desktop)</figcaption>
+    </figure>
+    <figure>
+        <img src="design/mobile-empty.png" alt="Mockup for generic features">
+        <figcaption>Mockup for generic features (Mobile)</figcaption>
+    </figure>
+    <figure>
+        <img src="design/mobile-meny.png" alt="">
+        <figcaption>Mockup for mobile menu</figcaption>
+    </figure>
+    <p>
+        The specific styling that applies to all pages is in the list below:
+    </p>
+    <ul>
+        <li>Font: "Lato" (with fallback to sans-serif) as this font is used a lot on the domain we are on</li>
+        <li>Color Palette
+        <ul class='colors'>
+            <li><span class='color' style='background:#EAE7DC;'>&nbsp;</span>
+                Light Background: #EAE7DC main background color
+            </li>
+            <li><span class='color' style='background:#D8C3A5;'>&nbsp;</span>
+                Beige Background: #D8C3A5 darker background for elements
+            </li>
+            <li><span class='color' style='background:#8E8D8A;'>&nbsp;</span>
+                Gray Background: #8E8D8A mainly used for the body background
+            </li>
+            <li><span class='color' style='background:#E98074;'>&nbsp;</span>
+                Light Red: #E98074 color for interactive elements like buttons
+            </li>
+            <li><span class='color' style='background:#E85A4F;'>&nbsp;</span>
+                Main Red: #E85A4F used for title in the header and other special text
+            </li>
+            <li><span class='color' style='background:#333333;'>&nbsp;</span>
+                Dark: #333333 this color is used for text and the header
+            </li>
+            <li><span class='color' style='background:#F5F4ED;'>&nbsp;</span>
+                Light: #F5F4ED color for input fields and text on darker backgrounds
+            </li>
+        </ul></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 </section>
 
-<section>
+<section><!-- Content -->
     <h2>Content</h2>
-    <h3>“About/Index”</h3>
-    <p>
-    A short description of who they are and what they do.
-    If possible a little “news” box should be added, where they can put recent happenings that they can easily update themselves.
-    </p>
+    <section><!-- Home page -->
+        <h3>Home page - index.html</h3>
+        <blockquote cite='http://arkivet.samfundet.no/P1_requirements_42.html'>
+            A short description of who they are and what they do.
+            If possible a little “news” box should be added, where they can put recent happenings that they can easily update themselves.
+        </blockquote>
+        <p>
+            This page will be divided into two columns.
+            The leftmost will contain a header and one ore more paragraphs containing some generic information about Arkivet provided by the customer. The rightmost column will contain a box with news from Arkivet. This box should be scrollable if the content exceeds the box.
+            If the page is accessed from a device with a small screen resolution, the two columns should be placed above one another and the news box should grow with the content instead of being scrollable.
+        </p>
+        <figure>
+            <img src="design/desktop-index.png" alt="Mockup for index.html">
+            <figcaption>Mockup for index.html (Desktop)</figcaption>
+        </figure>
+        <figure>
+            <img src="design/mobile-index.png" alt="Mockup for index.html">
+            <figcaption>Mockup for index.html (Mobile)</figcaption>
+        </figure>
+    </section>
 
-    <h3>“Identification projects”</h3>
-    <ol>
-    <li>Gallery for pictures that need to be identified</li>
-    <li>Audio gallery for clips that need to be identified</li>
-    </ol>
-    <p>
-    Arkivet have old pictures and old recordings they need help to identify.
-    At the time being they would like to have one gallery for pictures and one for audio, but this may change.
-    It should be possible to have a description and title which is easy to update.
-    There should also be a “button” of sorts that opens a new email with a pre-fixed subject that matches the ID/name of the picture so people can easily send an email to the right place if they know anything about it.
-    (these functions should also be the same for the audio clips)
-    </p>
+    <section><!-- Identification -->
+        <h3>Identification - identification.html</h3>
+        <blockquote cite='http://arkivet.samfundet.no/P1_requirements_42.html'>
+            <ol>
+                <li>Gallery for pictures that need to be identified</li>
+                <li>Audio gallery for clips that need to be identified</li>
+            </ol>
+            <p>
+                Arkivet have old pictures and old recordings they need help to identify.
+                At the time being they would like to have one gallery for pictures and one for audio, but this may change.
+                It should be possible to have a description and title which is easy to update.
+                There should also be a “button” of sorts that opens a new email with a pre-fixed subject that matches the ID/name of the picture so people can easily send an email to the right place if they know anything about it.
+                (these functions should also be the same for the audio clips)
+            </p>
+        </blockquote>
+        <p>
+            This page will contain a grid of either pictures or audio.
+            We plan to use JavaScript to load the gird of either pictures or audio clips.
+        </p>
+        <figure>
+            <img src="design/desktop-identifisering.png" alt="Mockup for choice between pictures or audio in identifisering.html">
+            <figcaption>Mockup for choice between pictures or audio in identifisering.html (Desktop)</figcaption>
+        </figure>
+        <figure>
+            <img src="design/mobile-identifisering.png" alt="Mockup for choice between pictures or audio in identifisering.html">
+            <figcaption>Mockup for choice between pictures or audio in identifisering.html (Mobile)</figcaption>
+        </figure>
+        <p>
+            The picture grid will consist of thumbnails with a title placed above and a short description placed below.
+            The number of columns in the grid should follow the screen resolution  in order to fit on mobile devices.
+            To avoid loading the original resolution of all the pictures at once, we will downscale the pictures to a reasonable scale (e.g.150px).
+            The thumbnails will then serve as a link to open the picture in full resolution.
+            When opened, the picture should be loaded and overlaid over the page within a box.
+            The box should contain the picture in full resolution, a title above it, a longer description and a mail link that automagically fills inn the subject field to contain the id/title of the picture.
+            This box should also link to the previous and next picture in the collection for easy browsing of the content.
+            While the box is open it is desirable that the left and right keys (swiping if on a touch device) also links to the previous and next pictures.
+            To achieve this functionality, we will use JavaScript to dynamically load the desired content and handle keyboard/touch inputs.
+        </p>
+        <figure>
+            <img src="design/desktop-identifisering_bilder.png" alt="Mockup for picture part of identifisering.html">
+            <figcaption>Mockup for picture part of identifisering.html (Desktop)</figcaption>
+        </figure>
+        <figure>
+            <img src="design/mobile-identifisering_bilder.png" alt="Mockup for picture part of identifisering.html">
+            <figcaption>Mockup for picture part of identifisering.html (Mobile)</figcaption>
+        </figure>
+        <figure>
+            <img src="design/desktop-identifisering_bildeåpen.png" alt="Mockup with picture open for identifisering.html">
+            <figcaption>Mockup with picture open for identifisering.html (Desktop)</figcaption>
+        </figure>
+        <figure>
+            <img src="design/mobile-identifisering_bildeåpen.png" alt="Mockup with picture open for identifisering.html">
+            <figcaption>Mockup with picture open for identifisering.html (Mobile)</figcaption>
+        </figure>
+        <p>
+            The audio clip grid will function in much the same manner as the picture grid.
+            The exception is that the audio files should not be opened in a overlaid box, but rather be loaded in place.
+            The audio should be loaded to the page by clicking an icon and be autoplayed when loaded.
+            An audio player should also replace the icon when loaded.
+        </p>
+        <figure>
+            <img src="design/desktop-identifisering_lyd.png" alt="Mockup for audio part of identifisering.html">
+            <figcaption>Mockup for audio part of identifisering.html (Desktop)</figcaption>
+        </figure>
+        <figure>
+            <img src="design/mobile-identifisering_lyd.png" alt="Mockup for audio part of identifisering.html">
+            <figcaption>Mockup for audio part of identifisering.html (Mobile)</figcaption>
+        </figure>
+    </section>
 
-    <h3>“Gallery”</h3>
-    <ol>
-        <li>General gallery</li>
-        <li>Overviews
-        <ol>
-            <li>Books</li>
-            <li>Under Dusken</li>
-        </ol>
-        </li>
-    </ol>
-    <p>
-    The general gallery is for showing off select highlight of fun things from the archive.
-    The overviews are for people to see what issues of Under Dusken and which books they have since they get a lot of inquiries from people that are looking for info from these.
-    It should also be easy to add more galleries and overviews so they can do it themselves later.
-    There is also a need to inform about overviews that exist but can't/won't be put out on a public page.
-    It should be informed that people need to send an email to get access to them.
-    </p>
+    <section><!-- Archive -->
+        <h3>Archive - arkiv.html</h3>
+        <blockquote cite='http://arkivet.samfundet.no/P1_requirements_42.html'>
+            <ol>
+                <li>General gallery</li>
+                <li>Books and Under Dusken</li>
+            </ol>
+            <p>
+                The general gallery is for showing off select highlight of fun things from the archive.
+                The overviews are for people to see what issues of Under Dusken and which books they have since they get a lot of inquiries from people that are looking for info from these.
+                It should also be easy to add more galleries and overviews so they can do it themselves later.
+                There is also a need to inform about overviews that exist but can't/won't be put out on a public page.
+                It should be informed that people need to send an email to get access to them.
+            </p>
+        </blockquote>
+        <p>
+            This page comes in two parts: picture gallery and overview of written material.
+            We plan to use JavaScript to load either the interface for pictures or written material.
+        </p>
+        <figure>
+            <img src="design/desktop-arkiv.png" alt="Mockup for choice between pictures and written material.">
+            <figcaption>Mockup for choice between pictures and written material (Desktop)</figcaption>
+        </figure>
+        <figure>
+            <img src="design/mobile-arkiv.png" alt="Mockup for choice between pictures and written material.">
+            <figcaption>Mockup for choice between pictures and written material (Mobile)</figcaption>
+        </figure>
+        <p>
+            The picture gallery should be identical to the picture part of identification page except for the mail link and different pictures.
+        </p>
+        <figure>
+            <img src="design/desktop-arkiv_bilder.png" alt="Mockup for picture part of arkiv.html">
+            <figcaption>Mockup for picture part of arkiv.html (Desktop)</figcaption>
+        </figure>
+        <figure>
+            <img src="design/mobile-arkiv_bilder.png" alt="Mockup for picture part of arkiv.html">
+            <figcaption>Mockup for picture part of arkiv.html (Mobile)</figcaption>
+        </figure>
+        <p>
+            The page for written material should contain a header, one or more paragraphs provided by the customer, and a filterable list of written material provided by the customer.
+            The list/table should contain the title/identifier of the material and the date of origin.
+            The exact content of each column may change if the customer wants more data to be displayed.
+            A search bar and date inputs should be present above the list/table in order to filter the list/table.
+            Additionally, there should be an option to sort by name and/or date.
+        </p>
+        <figure>
+            <img src="design/desktop-arkiv_bøker.png" alt="Mockup for written material part of arkiv.html">
+            <figcaption>Mockup for written material part of arkiv.html (Desktop)</figcaption>
+        </figure>
+        <figure>
+            <img src="design/mobile-arkiv_bøker.png" alt="Mockup for written material part of arkiv.html">
+            <figcaption>Mockup for written material part of arkiv.html (Mobile)</figcaption>
+        </figure>
+    </section>
 
-    <h3>“Contact us”</h3>
-    <p>
-    Contact information including: email addresses, postal address and information about office hours.
-    This page will contain a table/grid with the specified information.
-    </p>
+    <section><!-- Contact us -->
+        <h3>Contact us - kontakt.html</h3>
+        <blockquote cite='http://arkivet.samfundet.no/P1_requirements_42.html'>
+            Contact information including: email address(es), postal address and information about office hours.
+        </blockquote>
+        <p>
+            This page will contain a table/grid with the specified information.
+            Any field where a link is applicable should be a link.
+        </p>
+        <figure>
+            <img src="design/desktop-kontakt.png" alt="Mockup for kontakt.html">
+            <figcaption>Mockup for kontakt.html (Desktop)</figcaption>
+        </figure>
+        <figure>
+            <img src="design/mobile-kontakt.png" alt="Mockup for kontakt.html">
+            <figcaption>Mockup for kontakt.html (Mobile)</figcaption>
+        </figure>
+    </section>
 
-    <h3>“Daljer”</h3>
-    <p>
-    Information about lost and found for medals and how to get a new one.
-    There will be a need to put in some pictures in the text to “show” and not tell some key info.
-    </p>
+    <section><!-- Medals -->
+        <h3>Medals - daljer.html</h3>
+        <blockquote cite='http://arkivet.samfundet.no/P1_requirements_42.html'>
+            Information about lost and found for medals and how to get a new one.
+            There will be a need to put in some pictures in the text to “show” and not tell some key info.
+        </blockquote>
+        <p>
+            This page will contain a header, a paragraph and a filterable selection of medals.
+            The medals should be displayed akin to the picture grid previously described in the archive section.
+        </p>
+        <figure>
+            <img src="design/desktop-daljer.png" alt="Mockup for daljer.html">
+            <figcaption>Mockup for daljer.html (Desktop)</figcaption>
+        </figure>
+        <figure>
+            <img src="design/mobile-daljer.png" alt="Mockup for daljer.html">
+            <figcaption>Mockup for daljer.html (Mobile)</figcaption>
+        </figure>
+    </section>
 
-    <h3>“Help us”</h3>
-    <p>
-    This section will contain information about things the archive really want, what they already have and how to donate items.
-    The content of this page will be a header and a paragraph provided by the customer.
-    </p>
+    <section><!-- Help us -->
+        <h3>Help us - hjelp_oss.html</h3>
+        <blockquote cite='http://arkivet.samfundet.no/P1_requirements_42.html'>
+            This section will contain information about things the archive really want, what they already have and how to donate items.
+        </blockquote>
+        <p>
+            The content of this page will be a header and one or more paragraphs provided by the customer.
+        </p>
+        <figure>
+            <img src="design/desktop-hjelp_oss.png" alt="Mockup for hjelp_oss.html">
+            <figcaption>Mockup for hjelp_oss.html (Desktop)</figcaption>
+        </figure>
+        <figure>
+            <img src="design/mobile-hjelp_oss.png" alt="Mockup for hjelp_oss.html">
+            <figcaption>Mockup for hjelp_oss.html (Mobile)</figcaption>
+        </figure>
+    </section>
 
 </section>
 
-<section>
+<section><!-- Minimum Requirements -->
     <h2>Minimum Requirements</h2>
-    These are four distinct JavaScript applications.
+    <p>
+    We plan to store most of the data for the page in JSON and use JavaScript to put the data in the page.
+    By doing it this way, it will be easier to integrate with a back end in the future.
+    It will also be easier to decouple the design from the data.
+    These are four distinct JavaScript applications we intend to implement:
+    </p>
     <ol>
-        <li>Preview of text when hovering over an image.</li>
-        <li>Sorting and filtering objects.</li>
-        <li>Loading parts of the page dynamically. E.g. full resolution pictures and modular components.</li>
-        <li>Change the content based on selected language. E.g. Norwegian and English</li>
+        <li>Functions that change the style of elements. This will, among other things, be used to open/close the menu.</li>
+        <li>Looping over a set of JSON-data in order to place various amounts of pictures and audio in a grid.</li>
+        <li>Code that opens, closes full resolution pictures in a "pop-up" overlaid box on the page.</li>
+        <li>A function that places text in elements based on choice of language.</li>
     </ol>
 </section>
 
-<section>
+<section><!-- Plan -->
     <h2>Plan</h2>
 
     <h3>Organizational Scheme</h3>
@@ -129,6 +341,16 @@
             <li>style.css</li>
         </ul>
         </li>
+        <li>/data
+        <ul>
+            <li>arkiv.json</li>
+            <li>daljer.json</li>
+            <li>hjelp_oss.json</li>
+            <li>identifisering.json</li>
+            <li>index.json</li>
+            <li>kontakt.json</li>
+        </ul>
+        </li>
         <li>/js
         <ul>
             <li>functions.js</li>
@@ -136,26 +358,122 @@
         <li>/media
         <ul>
             <li>/audio</li>
-            <li>/icons</li>
+            <li>/icons
+            <ul>
+                <li>closewindow.gif</li>
+                <li>favicon.ico</li>
+                <li>launguage.gif</li>
+                <li>nextarrow.gif</li>
+                <li>placeholder.gif</li>
+                <li>play-audio.gif</li>
+                <li>prevarrow.gif</li>
+                <li>samfundet.gif</li>
+                <li>samfundetlogo-hvit.gif</li>
+            </ul>
+            </li>
             <li>/images</li>
         </ul>
         </li>
         <li>/modules
         <ul>
-            <li>menu.html</li>
+            <li>header.html</li>
+            <li>footer.html</li>
         </ul>
-        <li>data.json</li>
+        <li>arkiv.html</li>
         <li>daljer.html</li>
-        <li>galleri.html</li>
-        <li>index.html</li>
-        <li>kontakt.html</li>
         <li>hjelp_oss.html</li>
         <li>identifisering.html</li>
+        <li>index.html</li>
+        <li>kontakt.html</li>
     </ul>
+    <h3>Work Division and Deadlines</h3>
+    <p>
+        Kia is responsible for ensuring we have a universal design. Oda is responsible for artwork.
+    </p>
+    <table>
+        <tr>
+            <th>Filename</th>
+            <th>Description</th>
+            <th>Responsible</th>
+            <th>Deadline</th>
+        </tr>
+        <tr>
+            <td>*.json</td>
+            <td>All the data from the customer i JSON format. Some translation may be needed.</td>
+            <td>Oda, Magne</td>
+            <td>2019-10-20 (Deadline 1)</td>
+        </tr>
+        <tr>
+            <td>functions.js</td>
+            <td></td>
+            <td>Magne, Anders, Adrian, Kia</td>
+            <td>2019-10-27 (Deadline 2)</td>
+        </tr>
+        <tr>
+            <td>*.gif</td>
+            <td></td>
+            <td>Oda</td>
+            <td>2019-10-27 (Deadline 2)</td>
+        </tr>
+        <tr>
+            <td>header.html</td>
+            <td></td>
+            <td>Kia</td>
+            <td>2019-10-27 (Deadline 2)</td>
+        </tr>
+        <tr>
+            <td>footer.html</td>
+            <td></td>
+            <td>Kia</td>
+            <td>2019-10-27 (Deadline 2)</td>
+        </tr>
+        <tr>
+            <td>style.css</td>
+            <td></td>
+            <td>Everyone</td>
+            <td>2019-11-08 (Deadline 4)</td>
+        </tr>
+        <tr>
+            <td>arkiv.html</td>
+            <td></td>
+            <td>Magne</td>
+            <td>2019-11-03 (Deadline 3)</td>
+        </tr>
+        <tr>
+            <td>daljer.html</td>
+            <td></td>
+            <td>Anders</td>
+            <td>2019-11-03 (Deadline 3)</td>
+        </tr>
+        <tr>
+            <td>hjelp_oss.html</td>
+            <td></td>
+            <td>Adrian</td>
+            <td>2019-11-03 (Deadline 3)</td>
+        </tr>
+        <tr>
+            <td>identifisering.html</td>
+            <td></td>
+            <td>Oda</td>
+            <td>2019-11-03 (Deadline 3)</td>
+        </tr>
+        <tr>
+            <td>index.html</td>
+            <td></td>
+            <td>Adrian</td>
+            <td>2019-11-03 (Deadline 3)</td>
+        </tr>
+        <tr>
+            <td>kontakt.html</td>
+            <td></td>
+            <td>Oda</td>
+            <td>2019-11-03 (Deadline 3)</td>
+        </tr>
+    </table>
 </section>
 
 <footer>
-    <p>Adrian, Anders, Kia, Mange, Oda</p>
+    <p>By Adrian, Anders, Kia, Mange and Oda</p>
 </footer>
 
 </body>
