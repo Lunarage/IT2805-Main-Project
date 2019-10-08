@@ -290,15 +290,15 @@
         <blockquote cite='http://arkivet.samfundet.no/P1_requirements_42.html'>
             Information about lost and found for medals and how to get a new one.
             There will be a need to put in some pictures in the text to “show” and not tell some key info.
-            The information will be related to each item, and will describe characteristics 
+            The information will be related to each item, and will describe characteristics
             such as weight, size, age and potentially some comments in regards to rarity, alternative
-            designs and comments in regards to the design of the medal. Most of the older medals 
-            feature some variations, so the website will accomodate this by having alternative designs 
-            available for selection in the same window as the "regular" medals. I.e., in the window for the 
+            designs and comments in regards to the design of the medal. Most of the older medals
+            feature some variations, so the website will accomodate this by having alternative designs
+            available for selection in the same window as the "regular" medals. I.e., in the window for the
             "regular" medal, a button will be available for replacing the "regular" medal image with the alternative medal image.
         </blockquote>
         <p>
-            This page will contain a header, a paragraph and a filterable selection of medals. The medals 
+            This page will contain a header, a paragraph and a filterable selection of medals. The medals
             can be sorted according to several parameters, such as age, name and "recently added".
             The medals should be displayed akin to the picture grid previously described in the archive section,
             in addition to having the afforementioned "view alternative design"-button.
@@ -337,34 +337,34 @@
     <h2>7. Minimum Requirements</h2>
     <p>
         We plan to store most of the data for the page in the JSON format, retrieving and
-        processing the data using JavaScript. This provides a good starting point for a 
-        future backend implementation, while allowing for more dynamic processing and 
+        processing the data using JavaScript. This provides a good starting point for a
+        future backend implementation, while allowing for more dynamic processing and
         displaying of data. The data will be stored in arrays corresponding to their category,
          i.e. images will be stored in the "image"-array and audio in the "audio"-array.
-        To achieve this along with increasing the functionality of the website, the following 
+        To achieve this along with increasing the functionality of the website, the following
         four JavaScript functions will be implemented:
     </p>
     <ol>
         <li>
-            Functions for changing the style of the elements. This will be used to dynamically 
-            alter the page content, such as opening and closing the menu. This will increase the 
-            useability when viewing the web page on a phone with a small screen, as the menu can 
+            Functions for changing the style of the elements. This will be used to dynamically
+            alter the page content, such as opening and closing the menu. This will increase the
+            useability when viewing the web page on a phone with a small screen, as the menu can
             be opened and close to provide more viewable space.
         </li>
         <li>
             A function for looping over a set of JSON-data in order to place various amounts of
             pictures and audio in a grid. This simplifies the website as only one template is
-            used for each image or audio element. This also simplifies CRUD (Create, Read, Update, Delete) 
+            used for each image or audio element. This also simplifies CRUD (Create, Read, Update, Delete)
             functionality when implementing a backend, as elements are dynamically loaded.
         </li>
         <li>
             Code that opens and closes full resolution pictures in a "pop-up" overlaid box on the page.
-            This increases the loading times of the images and the website as only low-resolution preview 
+            This increases the loading times of the images and the website as only low-resolution preview
             images are loaded initially, while full-resolution pictures are only loaded when selected by the user.
         </li>
         <li>
             A function for replacing the text on the website based on the selected language: English or
-            Norwegian. This will remove the need for the user to re-load the website if a different language is 
+            Norwegian. This will remove the need for the user to re-load the website if a different language is
             selected. This also removes the need of maintaining two websites, one for each language, which
             increases the simplicity and maintainability of the website.
         </li>
@@ -412,7 +412,7 @@
                 <li>placeholder.gif</li>
                 <li>play-audio.gif</li>
                 <li>prevarrow.gif</li>
-                <li>samfundet.gif</li>
+                <li>samfundet.svg</li>
                 <li>samfundetlogo-hvit.gif</li>
             </ul>
             </li>
