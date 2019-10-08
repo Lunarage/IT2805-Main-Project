@@ -53,7 +53,7 @@
 <section><!-- Page Layout and Appearance -->
     <h2>5. Page Layout and Appearance</h2>
     <p>
-        Choosing the universal design for the webpage was all about keeping it simple.
+        Choosing the general design for the webpage was all about keeping it simple.
         The customer does not want anything flashy and want to be able to use the design for several years.
         We deliberately chose a color palette with low contrast colors and kept the design simple and free of textures.
         Too keep it from getting too flat we make use of the reds to make "Arkivet" in the header and the interactive buttons pop,
@@ -64,13 +64,20 @@
         <img src="design/desktop-empty.png" alt="Mockup for generic features">
         <figcaption>Mockup for generic features (Desktop)</figcaption>
     </figure>
+    <p>
+        The menu on the mobile layout is a bit different from the desktop one.
+        As screen space is precious on devices with low resolution, the menu should be toggleable with a button in the header.
+        The mobile menu should contain the same links as the desktop one, but they sould be simple rectangles stacked above/below each other.
+        The open menu should push down from the header and displace the elements below.
+        Toggeling the mobile menu should have a smooth transition akin to opening and closing a drawer.
+    </p>
     <figure>
         <img src="design/mobile-empty.png" alt="Mockup for generic features">
         <figcaption>Mockup for generic features (Mobile)</figcaption>
     </figure>
     <figure>
         <img src="design/mobile-meny.png" alt="">
-        <figcaption>Mockup for mobile menu</figcaption>
+        <figcaption>Mockup for open mobile menu</figcaption>
     </figure>
 
      <p>
@@ -285,13 +292,15 @@
         <blockquote cite='http://arkivet.samfundet.no/P1_requirements_42.html'>
             Information about lost and found for medals and how to get a new one.
             There will be a need to put in some pictures in the text to “show” and not tell some key info.
+        </blockquote>
+        <p>
             The information will be related to each item, and will describe characteristics
             such as weight, size, age and potentially some comments in regards to rarity, alternative
             designs and comments in regards to the design of the medal. Most of the older medals
             feature some variations, so the website will accomodate this by having alternative designs
             available for selection in the same window as the "regular" medals. I.e., in the window for the
             "regular" medal, a button will be available for replacing the "regular" medal image with the alternative medal image.
-        </blockquote>
+        </p>
         <p>
             This page will contain a header, a paragraph and a filterable selection of medals. The medals
             can be sorted according to several parameters, such as age, name and "recently added".
@@ -334,8 +343,8 @@
         We plan to store most of the data for the page in the JSON format, retrieving and
         processing the data using JavaScript. This provides a good starting point for a
         future backend implementation, while allowing for more dynamic processing and
-        displaying of data. The data will be stored in arrays corresponding to their category,
-         i.e. images will be stored in the "image"-array and audio in the "audio"-array.
+        displaying of data. The data will be stored in arrays of objects corresponding to their category,
+         i.e. information about images will be stored in the "image"-array and audio in the "audio"-array.
         To achieve this along with increasing the functionality of the website, the following
         four JavaScript functions will be implemented:
     </p>
@@ -344,7 +353,7 @@
             Functions for changing the style of the elements. This will be used to dynamically
             alter the page content, such as opening and closing the menu. This will increase the
             useability when viewing the web page on a phone with a small screen, as the menu can
-            be opened and close to provide more viewable space.
+            be opened and closed to provide more viewable space.
         </li>
         <li>
             A function for looping over a set of JSON-data in order to place various amounts of
@@ -391,6 +400,8 @@
         <ul>
             <li>functions.js</li>
             <li>popUpWindow.js</li>
+            <li>galleryGenerator.js</li>
+            <li>elementManipulators.js</li>
         </ul>
         <li>/media
         <ul>
@@ -408,7 +419,7 @@
                 <li>play-audio.gif</li>
                 <li>prevarrow.gif</li>
                 <li>samfundet.svg</li>
-                <li>samfundetlogo-hvit.gif</li>
+                <li>samfundet_logo_med_tekst.svg</li>
             </ul>
             </li>
             <li>/pictures
@@ -431,7 +442,7 @@
     </ul>
     <h3>Work Division and Deadlines</h3>
     <p>
-        Kia is responsible for ensuring we have a universal design. Oda is responsible for artwork.
+        Kia is responsible for ensuring we have a universal design. Oda is responsible for artwork (icons etc.).
     </p>
     <table>
         <tr>
@@ -449,11 +460,29 @@
         <tr>
             <td>functions.js</td>
             <td></td>
-            <td>Magne, Anders</td>
+            <td>Magne, Adrian</td>
             <td>2019-10-27 (Deadline 2)</td>
         </tr>
         <tr>
-            <td>*.gif</td>
+            <td>popUpWindow.js</td>
+            <td></td>
+            <td>Magne</td>
+            <td>2019-11-03 (Deadline 3)</td>
+        </tr>
+        <tr>
+            <td>galleryGenerator.js</td>
+            <td></td>
+            <td>Anders</td>
+            <td>2019-11-03 (Deadline 3)</td>
+        </tr>
+        <tr>
+            <td>elemenManipulators.js</td>
+            <td></td>
+            <td>Kia</td>
+            <td>2019-10-27 (Deadline 2)</td>
+        </tr>
+        <tr>
+            <td>media/icons/*</td>
             <td></td>
             <td>Oda</td>
             <td>2019-11-03 (Deadline 3)</td>
@@ -497,7 +526,7 @@
         <tr>
             <td>identifisering.html</td>
             <td></td>
-            <td>Oda</td>
+            <td>Adrian</td>
             <td>2019-11-03 (Deadline 3)</td>
         </tr>
         <tr>
