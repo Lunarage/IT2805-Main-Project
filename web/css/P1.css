@@ -32,7 +32,9 @@ h4{
 }
 
 blockquote{
-    margin-left:2em;
+    border-left: solid 1px;
+    margin-left:1em;
+    padding-left: 1em;
 }
 
 ol.h3list {
