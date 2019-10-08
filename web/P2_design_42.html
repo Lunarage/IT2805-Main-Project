@@ -317,16 +317,14 @@
 <section><!-- Minimum Requirements -->
     <h2>Minimum Requirements</h2>
     <p>
-    We plan to store most of the data for the page in JSON and use JavaScript to put the data in the page.
-    By doing it this way, it will be easier to integrate with a back end in the future.
-    It will also be easier to decouple the design from the data.
-    These are four distinct JavaScript applications we intend to implement:
+        We plan to store most of the data for the page in the JSON format, retrieving and processing the data using JavaScript. This provides a good starting point for a future backend implementation, while allowing for more dynamic processing and displaying of data. The data will be stored in arrays corresponding to their category, i.e. images will be stored in the "image"-array and audio in the "audio"-array.
+        To achieve this along with increasing the functionality of the website, the following four JavaScript functions will be implemented:
     </p>
     <ol>
-        <li>Functions that change the style of elements. This will, among other things, be used to open/close the menu.</li>
-        <li>Looping over a set of JSON-data in order to place various amounts of pictures and audio in a grid.</li>
-        <li>Code that opens, closes full resolution pictures in a "pop-up" overlaid box on the page.</li>
-        <li>A function that places text in elements based on choice of language.</li>
+        <li>A search function for searching through items on the website. The search function increases the user-friendliness of the website as the user does not have to navigate through hundreds of objects to locate the targets. The function will use filtering in JavaScript to filter the items based on the user input. </li>
+        <li>A function for looping over a set of JSON-data in order to place various amounts of pictures and audio in a grid. This simplifies the website as only one template is used for each image or audio element. This also simplifies CRUD (Create, Read, Update, Delete) functionality when implementing a backend, as elements are dynamically loaded.</li>
+        <li>Code that opens and closes full resolution pictures in a "pop-up" overlaid box on the page. This increases the loading times of the images and the website as only low-resolution preview images are loaded initially, while full-resolution pictures are only loaded when selected by the user.</li>
+        <li>A function for replacing the text on the website based on the selected language: English or Norwegian. This will remove the need for the user to re-load the website if a different language is selected. This also removes the need of maintaining two websites, one for each language, which increasing the simplicity and maintainability of the website.</li>
     </ol>
 </section>
 
