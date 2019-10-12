@@ -1,4 +1,5 @@
 :root {
+    /* Color Palette */
     --light-bg: #EAE7DC;
     --beige-bg: #D8C3A5;
     --gray: #8E8D8A;
@@ -6,4 +7,29 @@
     --main-red: #E85A4F;
     --dark: #333333;
     --light: #F5F4ED;
+
+    /* Fonts */
+    --main-font: Lato, sans-serif;
+
+    /* Other variables */
+    --page-width: 1280px;
+}
+
+*{
+    /* Setting all elements to use border-box. */
+    /* Makes the padding and border included in the calculation */
+    /* of the width and height of elements. */
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--gray);
+    padding: 20px;
+    margin: 0;
+}
+
+#container{
+    background-color: var(--light-bg);
+    width: var(--page-width);
+    margin: 0 auto;
 }
