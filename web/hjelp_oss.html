@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
     <link rel='stylesheet' type='text/css' href='css/style.css' />
     <script type='text/javascript' src='js/functions.js'></script>
+    <script type='text/javascript' src='js/elementManipulators.js'></script>
     <title>Arkivet</title>
     <script type='text/javascript'>
         var GET = getGETvalues();
-        if(!GET.lang){ //Default the language to norwegian unless specified
+        //Default the language to norwegian unless specified
+        if(!GET.lang){
             GET.lang = "no";
         }
 
@@ -17,10 +20,14 @@
             //Where we want to put new elements
             let content = document.getElementById('content');
 
-            request.onreadystatechange = function(){ //What happens when the request changes state a.k.a what we do when we get the response
-                if(this.readyState == 4){ //readyState 4 = response ready
-                    content.innerHTML = ""; //clear the previous content
-                    let data = JSON.parse(this.response); //convert text to JSON
+            request.onreadystatechange = function(){
+            //What happens when the request changes state a.k.a what we do when we get the response
+                //readyState 4 = response ready
+                if(this.readyState == 4){
+                    //clear the previous content
+                    content.innerHTML = "";
+                    //convert text to JSON
+                    let data = JSON.parse(this.response);
                     //Choose language
                     if(lang == "no"){
                         data = data.no;
@@ -49,9 +56,9 @@
 </head>
 <body>
     <div id='container'>
-        <div id='header'>Header goes here</div>
+        <header id='header'><script>getHeader()</script></header>
         <div id='content'><script>getContent(GET.lang)</script></div>
-        <div id='footer'>Footer goes here</div>
+        <footer id='footer'><script>getFooter()</script></footer>
     </div>
 </body>
 </html>

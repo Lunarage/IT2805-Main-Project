@@ -2,15 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
     <link rel='stylesheet' type='text/css' href='css/style.css' />
     <script type='text/javascript' src='js/functions.js'></script>
+    <script type='text/javascript' src='js/elementManipulators.js'></script>
     <title>Arkivet</title>
+    <script type='text/javascript'>
+        var GET = getGETvalues();
+        //Default the language to norwegian unless specified
+        if(!GET.lang){
+            GET.lang = "no";
+        }
+    </script>
 </head>
 <body>
     <div id='container'>
-        <div id='header'>Header goes here</div>
-        <div id='content'>Content goes here</div>
-        <div id='footer'>Footer goes here</div>
+        <header id='header'><script>getHeader()</script></header>
+        <div id='content'><script>getContent(GET.lang)</script></div>
+        <footer id='footer'><script>getFooter()</script></footer>
     </div>
 </body>
 </html>
