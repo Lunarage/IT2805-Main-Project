@@ -23,9 +23,19 @@
 }
 
 body{
+    font-family: var(--main-font);
     background-color: var(--gray);
     padding: 20px;
     margin: 0;
+}
+
+header{
+    background-color: var(--dark);
+    color: var(--main-red);
+}
+
+footer{
+    background-color: var(--beige-bg);
 }
 
 #container{
