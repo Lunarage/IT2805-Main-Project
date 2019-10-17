@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
-    <link rel='stylesheet' type='text/css' href='css/style.css' />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
     <script type='text/javascript' src='js/functions.js'></script>
     <script type='text/javascript' src='js/elementManipulators.js'></script>
+    <script type='text/javascript' src='js/galleryGenerator.js'></script>
     <title>Arkivet</title>
     <script type='text/javascript'>
         var GET = getGETvalues();
@@ -13,12 +15,102 @@
         if(!GET.lang){
             GET.lang = "no";
         }
+
+        //Default the page to index unless specified
+        if(!GET.page){
+            GET.page = "index";
+        }
+
+        function getContent(lang="no", page = "index"){
+            //Defaults to norwegian unless argument is specified
+            //New request object
+            let request = new XMLHttpRequest();
+            //Where we want to put new elements
+            let content = document.getElementById('content');
+
+            request.onreadystatechange = function(){
+            //What happens when the request changes state a.k.a what we do when we get the response
+                //readyState 4 = response ready
+                if(this.readyState == 4){
+                    //clear the previous content
+                    content.innerHTML = "";
+                    //convert text to JSON
+                    let data = JSON.parse(this.response);
+                    //Choose language
+                    if(lang == "no"){
+                        data = data.no;
+                    }else if(lang == "en"){
+                        data = data.en;
+                    }
+
+                    if(page == "index"){
+                        data = data.index;
+
+                        for(let i = 0; i < data.paragraphs.length; i++){
+                            let para = document.createElement('p');
+                            para.innerText = data.paragraphs[i];
+                            content.appendChild(para);
+                        }
+
+                        let buttonBox = document.createElement('div');
+                        buttonBox.setAttribute('class','flexrow');
+
+                        let pictureButton = document.createElement('a');
+                        pictureButton.setAttribute('href',"?lang="+lang+"&page=pictures");
+                        pictureButton.setAttribute('class','button');
+                        pictureButton.innerText = data.pictureButton;
+                        buttonBox.appendChild(pictureButton);
+
+                        let audioButton = document.createElement('a');
+                        audioButton.setAttribute('href',"?lang="+lang+"&page=audio");
+                        audioButton.setAttribute('class','button');
+                        audioButton.innerText = data.audioButton;
+                        buttonBox.appendChild(audioButton);
+
+                        content.appendChild(buttonBox);
+
+                    }else if(page == "pictures"){
+                        data = data.pictures;
+                        //Create an element and append it to content
+                        let header = document.createElement('h1');
+                        header.innerText = data.title;
+                        content.appendChild(header);
+
+                        for(let i = 0; i < data.paragraphs.length; i++){
+                            let para = document.createElement('p');
+                            para.innerText = data.paragraphs[i];
+                            content.appendChild(para);
+                        }
+
+                        content.appendChild(generatePictureGallery(data.pictures));
+                    }else if(page == "audio"){
+                        data = data.audio;
+                        //Create an element and append it to content
+                        let header = document.createElement('h1');
+                        header.innerText = data.title;
+                        content.appendChild(header);
+
+                        for(let i = 0; i < data.paragraphs.length; i++){
+                            let para = document.createElement('p');
+                            para.innerText = data.paragraphs[i];
+                            content.appendChild(para);
+                        }
+
+                        content.appendChild(generateAudioGallery(data.audio));
+                    }
+                }
+            }
+
+            //Open and send the request
+            request.open('GET','data/identifisering.json',true);
+            request.send();
+        }
     </script>
 </head>
 <body>
     <div id='container'>
         <header id='header'><script>getHeader()</script></header>
-        <div id='content'><script>getContent(GET.lang)</script></div>
+        <div id='content'><script>getContent(GET.lang,GET.page)</script></div>
         <footer id='footer'><script>getFooter()</script></footer>
     </div>
 </body>
