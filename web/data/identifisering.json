@@ -18,6 +18,54 @@
              "longDesc": "This poster is really old and presumably from some time long ago",
              "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
              "picture": "media/pictures/placeholder.jpg"
+            },
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
+            },
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
+            },
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
+            },
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
+            },
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
+            },
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
+            },
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
+            },
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
             }
         ]
     },
@@ -30,7 +78,7 @@
             {"title":"Audio Clip",
              "shortDesc": "This is an audio clip",
              "longDesc": "This audio clip is an unidentified clip from some time",
-             "audio": "media/pictures/placeholder.mp3"
+             "audio": "media/audio/placeholder.mp3"
             }
         ]
 
@@ -55,6 +103,54 @@
              "longDesc": "This poster is really old and presumably from some time long ago",
              "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
              "picture": "media/pictures/placeholder.jpg"
+            },
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
+            },
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
+            },
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
+            },
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
+            },
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
+            },
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
+            },
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
+            },
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
             }
         ]
     },
@@ -67,7 +163,7 @@
             {"title":"Audio Clip",
              "shortDesc": "This is an audio clip",
              "longDesc": "This audio clip is an unidentified clip from some time",
-             "audio": "media/pictures/placeholder.mp3"
+             "audio": "media/audio/placeholder.mp3"
             }
         ]
 
