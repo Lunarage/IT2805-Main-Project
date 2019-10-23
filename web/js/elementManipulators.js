@@ -20,7 +20,7 @@ function toggleClass(elementId, classString){
     }
 }
 
-function getHeader(){
+function getHeader(page){
     //New request object
     let request = new XMLHttpRequest();
     //Where we want to put new elements
@@ -33,6 +33,8 @@ function getHeader(){
             //clear the previous content
             content.innerHTML = "";
             content.innerHTML = this.response;
+            let navLink = document.getElementById(page);
+            addClass(page,'selected');
         }
     }
     request.open('GET','modules/header.html',true);
@@ -58,3 +60,5 @@ function getFooter(){
     request.send();
 }
 
+function setCurrentNav(page){
+}

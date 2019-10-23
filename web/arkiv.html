@@ -7,6 +7,8 @@
     <link rel='stylesheet' type='text/css' href='css/style.css'>
     <script type='text/javascript' src='js/functions.js'></script>
     <script type='text/javascript' src='js/elementManipulators.js'></script>
+    <script type='text/javascript' src='js/galleryGenerator.js'></script>
+    <script type='text/javascript' src='js/popUpWindow.js'></script>
     <title>Arkivet</title>
     <script type='text/javascript'>
         var GET = getGETvalues();
@@ -14,12 +16,186 @@
         if(!GET.lang){
             GET.lang = "no";
         }
+
+        //Default the page to index unless specified
+        if(!GET.page){
+            GET.page = 'index';
+        }
+
+        let data = {};
+
+        function searchBooks(){
+            let books = data.books;
+            let searchResults = document.getElementById('searchResults');
+
+            let table = document.createElement('table');
+            let header = document.createElement('tr');
+            let headerTitle = document.createElement('th');
+            let headerAuthor = document.createElement('th');
+            let headerYear = document.createElement('th');
+            if(GET.lang == 'no'){
+                headerTitle.innerText = 'Tittel';
+                headerAuthor.innerText = 'Forfatter';
+                headerYear.innerText = 'År';
+            }else if(GET.lang = 'en'){
+                headerTitle.innerText = 'Title';
+                headerAuthor.innerText = 'Author';
+                headerYear.innerText = 'Year';
+            }
+            header.appendChild(headerTitle);
+            header.appendChild(headerAuthor);
+            header.appendChild(headerYear);
+            table.appendChild(header);
+
+            books.forEach(function(book){
+                let row = document.createElement('tr');
+                let titleData = document.createElement('td');
+                titleData.innerText = book.title;
+                let authorData = document.createElement('td');
+                authorData.innerText = book.author;
+                let yearData = document.createElement('td');
+                yearData.innerText = book.year;
+                row.appendChild(titleData);
+                row.appendChild(authorData);
+                row.appendChild(yearData);
+                table.appendChild(row);
+            });
+
+            searchResults.appendChild(table);
+        }
+
+        function getContent(lang='no', page = 'index'){
+            //Defaults to norwegian unless argument is specified
+
+            //New request object
+            let request = new XMLHttpRequest();
+            //Where we want to put new elements
+            let content = document.getElementById('content');
+
+            request.onreadystatechange = function(){
+                //What happens when the request changes state a.k.a what we do when we get the response
+                //readyState 4 = response ready
+                if(this.readyState == 4){
+                    //clear the previous content
+                    content.innerHTML = '';
+                    //convert text to JSON
+                    data = JSON.parse(this.response);
+                    //Choose language
+                    if(lang == 'no'){
+                        data = data.no;
+                    }else if(lang == 'en'){
+                        data = data.en;
+                    }
+
+                    if(page == 'index'){
+                        data = data.index;
+
+                        for(let i = 0; i < data.paragraphs.length; i++){
+                            let para = document.createElement('p');
+                            para.innerText = data.paragraphs[i];
+                            content.appendChild(para);
+                        }
+
+                        let buttonBox = document.createElement('div');
+                        buttonBox.setAttribute('class','flexrow');
+
+                        let pictureButton = document.createElement('a');
+                        pictureButton.setAttribute('href','?lang='+lang+'&page=pictures');
+                        pictureButton.setAttribute('class','button');
+                        pictureButton.innerText = data.pictureButton;
+                        buttonBox.appendChild(pictureButton);
+
+                        let booksButton = document.createElement('a');
+                        booksButton.setAttribute('href','?lang='+lang+'&page=books');
+                        booksButton.setAttribute('class','button');
+                        booksButton.innerText = data.booksButton;
+                        buttonBox.appendChild(booksButton);
+
+                        content.appendChild(buttonBox);
+                    }else if(page == 'pictures'){
+                        data = data.pictures;
+                        //Create an element and append it to content
+                        let header = document.createElement('h1');
+                        header.innerText = data.title;
+                        content.appendChild(header);
+
+                        for(let i = 0; i < data.paragraphs.length; i++){
+                            let para = document.createElement('p');
+                            para.innerText = data.paragraphs[i];
+                            content.appendChild(para);
+                        }
+
+                        content.appendChild(generatePictureGallery(data.pictures));
+
+                    }else if(page == 'books'){
+                        data = data.books;
+
+                        let header = document.createElement('h1');
+                        header.innerText = data.title;
+                        content.append(header);
+
+                        for(let i = 0; i < data.paragraphs.length; i++){
+                            let para = document.createElement('p');
+                            para.innerText = data.paragraphs[i];
+                            content.appendChild(para);
+                        }
+
+                        searchTextInput = document.createElement('input');
+                        searchTextLabel = document.createElement('label');
+                        searchTextInput.setAttribute('type','text');
+                        searchTextLabel.setAttribute('id','searchText');
+
+                        yearMinInput = document.createElement('input');
+                        yearMinLabel = document.createElement('label');
+                        yearMinInput.setAttribute('id','minYear');
+                        yearMinInput.setAttribute('type','number');
+                        yearMinInput.setAttribute('class','year');
+                        yearMinLabel.setAttribute('for','minYear');
+
+                        yearMaxInput = document.createElement('input');
+                        yearMaxLabel = document.createElement('label');
+                        yearMaxInput.setAttribute('id','maxYear');
+                        yearMaxInput.setAttribute('type','number');
+                        yearMaxInput.setAttribute('class','year');
+                        yearMaxLabel.setAttribute('for','maxYear');
+
+                        if(lang == 'no'){
+                            searchTextLabel.innerText = 'Søketekst';
+                            yearMinLabel.innerText = 'Fra og med';
+                            yearMaxLabel.innerText = 'Til og med';
+                        }else if(lang == 'en'){
+                            searchTextLabel.innerText = 'Search Text';
+                            yearMinLabel.innerText = 'From inclusive';
+                            yearMaxLabel.innerText = 'To inclusive';
+                        }
+
+                        content.appendChild(searchTextLabel);
+                        content.appendChild(searchTextInput);
+                        content.appendChild(yearMinLabel);
+                        content.appendChild(yearMinInput);
+                        content.appendChild(yearMaxLabel);
+                        content.appendChild(yearMaxInput);
+
+                        searchResults = document.createElement('div');
+                        searchResults.setAttribute('id','searchResults');
+                        content.appendChild(searchResults);
+                        searchBooks();
+                    }
+                }
+            }
+            //Open and send the request
+            request.open('GET','data/arkiv.json',true);
+            request.send();
+        }
     </script>
 </head>
 <body>
+    <div id='popUpContainer' style='visibility:hidden'>
+        <div id='popUpWindow'></div>
+    </div>
     <div id='container'>
-        <header id='header'><script>getHeader()</script></header>
-        <div id='content'><script>getContent(GET.lang)</script></div>
+        <header id='header'><script>getHeader('navArkiv')</script></header>
+        <div id='content'><script>getContent(GET.lang,GET.page)</script></div>
         <footer id='footer'><script>getFooter()</script></footer>
     </div>
 </body>
