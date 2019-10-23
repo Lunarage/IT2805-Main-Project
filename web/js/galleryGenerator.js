@@ -13,7 +13,7 @@ function generatePictureGallery(data, identifisering = false){
         image.setAttribute('alt',data[i].shortDesc);
 
         let link = document.createElement('a');
-        link.setAttribute('onClick','');
+        link.setAttribute('onClick','openWindow('+JSON.stringify(data[i])+','+identifisering+')');
         link.appendChild(image);
 
         let desc = document.createElement('p');
@@ -39,6 +39,7 @@ function generateAudioGallery(data,){
         let title = document.createElement('h2');
         title.innerText = data[i].title;
 
+        //TODO: Do not auto load the audio element, but rather create a button that loads the requested audio + autoplay
         let player = document.createElement('audio');
         player.setAttribute('controls','')
         let source = document.createElement('source');

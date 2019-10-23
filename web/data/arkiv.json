@@ -1,0 +1,72 @@
+{
+"en":{
+    "index":{
+        "paragraphs":[
+            "Something about the things"
+        ],
+        "booksButton":"Books/Under Dusken",
+        "pictureButton":"Pictures"
+    },
+    "pictures":{
+        "title":"Pictures",
+        "paragraphs":[
+            "Something about the pictures"
+        ],
+        "pictures":[
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
+            }
+        ]
+    },
+    "books":{
+       "title":"Overview",
+       "paragraphs":[
+           "Some description of this page"
+       ],
+       "books":[
+           { "title": "UKA-13 Program",
+             "author": "UKA-13",
+             "year":"2013"
+           }
+       ]
+    }
+},
+"no":{
+    "index":{
+        "paragraphs":[
+            "Something about the things"
+        ],
+        "booksButton":"Bøker/Under Dusken",
+        "pictureButton":"Pictures"
+    },
+    "pictures":{
+        "title":"Pictures",
+        "paragraphs":[
+            "Something about the pictures"
+        ],
+        "pictures":[
+            {"title":"Poster",
+             "shortDesc": "This is a poster",
+             "longDesc": "This poster is really old and presumably from some time long ago",
+             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+             "picture": "media/pictures/placeholder.jpg"
+            }
+        ]
+    },
+    "books":{
+       "title":"Oversikt",
+       "paragraphs":[
+           "En beskrivelse av siden"
+       ],
+       "books":[
+           { "title": "UKA-13 Program",
+             "author": "UKA-13",
+             "year":"2013"
+           }
+       ]
+    }
+}
+}
