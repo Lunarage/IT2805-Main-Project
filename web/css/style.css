@@ -315,13 +315,11 @@ div.audioGallery{
 
 #popUpWindow{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: flex-start;
+    flex-flow: column;
+    align-items: center;
 
-    max-height: 100vw;
-    height: 100vw;
+    /* Set the max size of the window to view height (vh) and view width (vw) */
+    max-height: 100vh;
     max-width: 100vw;
 
     margin: auto;
@@ -333,24 +331,28 @@ div.audioGallery{
 
 #popUpWindow>h1{
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 16px;
-    flex: 0 0 100%;
-}
-
-#popUpWindow>.pictureBox{
+    margin: 0;
+    padding: bottom: 16px;
     flex: 0 1 auto;
-    max-height: 100%;
 }
 
-#popUpWindow>.pictureBox>img{
-    display: block;
-    max-width:100%;
-    max-height:inherit;
+#popUpWindow>button{
+    border: none;
+    background-color: var(--light-red);
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    flex: 0 1 auto;
+}
+
+#popUpWindow>img{
+    max-width: 100%;
 }
 
 #popUpWindow>p{
-    flex: 0 0 100%;
+    margin: 0;
+    padding: 8px;
+    flex: 0 1 auto;
 }
 /* }}} */
 
