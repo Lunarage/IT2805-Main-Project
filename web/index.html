@@ -5,71 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='css/style.css'>
-    <script type='text/javascript' src='js/functions.js'></script>
-    <script type='text/javascript' src='js/elementManipulators.js'></script>
+    <script src='js/functions.js'></script>
+    <script src='js/elementManipulators.js'></script>
     <title>Arkivet</title>
-    <script type='text/javascript'>
+    <script>
         var GET = getGETvalues();
         //Default the language to norwegian unless specified
         if(!GET.lang){
             GET.lang = "no";
         }
 
-        function getContent(lang="no"){ //Defaults to norwegian unless argument is specified
-            //New request object
-            let request = new XMLHttpRequest();
+        var data = {};
+
+        function renderPage(){
             //Where we want to put new elements
             let leftcolumn = document.getElementById('leftcolumn');
             let rightcolumn = document.getElementById('rightcolumn');
 
-            request.onreadystatechange = function(){
-            //What happens when the request changes state a.k.a what we do when we get the response
-                //readyState 4 = response ready
-                if(this.readyState == 4){
-                    //clear the previous content
-                    leftcolumn.innerHTML = "";
-                    rightcolumn.innerHTML = "";
-                    //convert text to JSON
-                    let data = JSON.parse(this.response);
-                    //Choose language
-                    if(lang == "no"){
-                        data = data.no;
-                    }else if(lang == "en"){
-                        data = data.en;
-                    }
+            //clear the previous content
+            leftcolumn.innerHTML = "";
+            rightcolumn.innerHTML = "";
 
-                    let leftdata = data.leftcolumn;
-                    //Create an element and append it to content
-                    let header = document.createElement('h1');
-                    header.innerText = leftdata.title;
-                    leftcolumn.appendChild(header);
-
-                    for(let i = 0; i < leftdata.paragraphs.length; i++){
-                        let para = document.createElement('p');
-                        para.innerText = leftdata.paragraphs[i];
-                        leftcolumn.appendChild(para);
-                    }
-
-                    let rightdata = data.rightcolumn;
-                    header = document.createElement('h1');
-                    header.innerText = rightdata.title;
-                    rightcolumn.appendChild(header);
-                    for(let i = 0; i < rightdata.news.length; i++){
-                        let header = document.createElement('h2');
-                        header.innerText = rightdata.news[i].title;
-                        rightcolumn.appendChild(header);
-                        for(let k = 0; k < rightdata.news[i].paragraphs.length; k++){
-                            let para = document.createElement('p');
-                            para.innerText = rightdata.news[i].paragraphs[k];
-                            rightcolumn.appendChild(para);
-                        }
-                    }
-                }
+            //Choose language
+            if(GET.lang == "no"){
+                data = data.no;
+            }else if(GET.lang == "en"){
+                data = data.en;
             }
 
-            //Open and send the request
-            request.open('GET','data/index.json',true);
-            request.send();
+            let leftdata = data.leftcolumn;
+            //Create an element and append it to content
+            let header = document.createElement('h1');
+            header.innerText = leftdata.title;
+            leftcolumn.appendChild(header);
+
+            for(let i = 0; i < leftdata.paragraphs.length; i++){
+                let para = document.createElement('p');
+                para.innerText = leftdata.paragraphs[i];
+                leftcolumn.appendChild(para);
+            }
+
+            let rightdata = data.rightcolumn;
+            header = document.createElement('h1');
+            header.innerText = rightdata.title;
+            rightcolumn.appendChild(header);
+            for(let i = 0; i < rightdata.news.length; i++){
+                let header = document.createElement('h2');
+                header.innerText = rightdata.news[i].title;
+                rightcolumn.appendChild(header);
+                for(let k = 0; k < rightdata.news[i].paragraphs.length; k++){
+                    let para = document.createElement('p');
+                    para.innerText = rightdata.news[i].paragraphs[k];
+                    rightcolumn.appendChild(para);
+                }
+            }
         }
     </script>
 </head>
@@ -79,7 +68,7 @@
         <div id='content'>
             <div>
                 <div id="leftcolumn"></div>
-                <div id="rightcolumn"><script>getContent(GET.lang)</script></div>
+                <div id="rightcolumn"><script>getData('data/index.json')</script></div>
             </div>
         </div>
         <footer id='footer'><script>getFooter()</script></footer>
