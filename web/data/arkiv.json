@@ -30,6 +30,34 @@
            { "title": "UKA-13 Program",
              "author": "UKA-13",
              "year":"2013"
+           },
+           { "title": "Teaterprogram UKA",
+             "author": "UKA-13",
+             "year":"2013"
+           },
+           { "title": "Teaterprogram",
+             "author": "UKA-15",
+             "year":"2015"
+           },
+           { "title": "Tempora",
+             "author": "UKA-39",
+             "year":"1939"
+           },
+           { "title": "Høstprogram 1981",
+             "author": "Styret",
+             "year":"1981"
+           },
+           { "title": "Prosjektrapport for oppusing av Strossa",
+             "author": "Arnhild Kjørsvik, Gunnhild Marie Gransæther, Helga Kristine Teige, Sigrid Rossebø Hansen, Synøve Flobak",
+             "year":"2009"
+           },
+           { "title": "Referat fra finansstyremøte",
+             "author": "Finansstyret",
+             "year":"1946-1954"
+           },
+           { "title": "Husets drift",
+             "author": "Finansstyret",
+             "year":"1930"
            }
        ]
     }
@@ -65,6 +93,34 @@
            { "title": "UKA-13 Program",
              "author": "UKA-13",
              "year":"2013"
+           },
+           { "title": "Teaterprogram UKA",
+             "author": "UKA-13",
+             "year":"2013"
+           },
+           { "title": "Teaterprogram",
+             "author": "UKA-15",
+             "year":"2015"
+           },
+           { "title": "Tempora",
+             "author": "UKA-39",
+             "year":"1939"
+           },
+           { "title": "Høstprogram 1981",
+             "author": "Styret",
+             "year":"1981"
+           },
+           { "title": "Prosjektrapport for oppusing av Strossa",
+             "author": "Arnhild Kjørsvik, Gunnhild Marie Gransæther, Helga Kristine Teige, Sigrid Rossebø Hansen, Synøve Flobak",
+             "year":"2009"
+           },
+           { "title": "Referat fra finansstyremøte",
+             "author": "Finansstyret",
+             "year":"1946-1954"
+           },
+           { "title": "Husets drift",
+             "author": "Finansstyret",
+             "year":"1930"
            }
        ]
     }
