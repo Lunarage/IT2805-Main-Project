@@ -39,7 +39,7 @@ function getHeader(page){
             content.innerHTML = this.response;
             let navLink = document.getElementById(page);
             addClass(page,'selected');
-            //TODO: Language spesific names in the nav links
+            //TODO: Language specific names in the nav links
         }
     }
     request.open('GET','modules/header.html',true);

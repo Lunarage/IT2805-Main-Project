@@ -5,21 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='css/style.css'>
-    <script type='text/javascript' src='js/functions.js'></script>
-    <script type='text/javascript' src='js/elementManipulators.js'></script>
+    <script src='js/functions.js'></script>
+    <script src='js/elementManipulators.js'></script>
     <title>Arkivet</title>
-    <script type='text/javascript'>
+    <script>
         var GET = getGETvalues();
         //Default the language to norwegian unless specified
         if(!GET.lang){
             GET.lang = "no";
+        }
+
+        var data = {};
+
+        function renderPage(){
+            //Where we want to put new elements
+            let content = document.getElementById('content');
+            //clear the previous content
+            content.innerHTML = '';
+
+            if(GET.lang == 'no'){
+                data = data.no;
+            }else if(GET.lang == 'en'){
+                data = data.en;
+            }
+
+            let hello = document.createElement('p');
+            hello.innerText = 'Hello World!';
+            content.appendChild(hello);
         }
     </script>
 </head>
 <body>
     <div id='container'>
         <header id='header'><script>getHeader('navDaljer')</script></header>
-        <div id='content'><script>getContent(GET.lang)</script></div>
+        <div id='content'><script>getData('data/daljer.json')</script></div>
         <footer id='footer'><script>getFooter()</script></footer>
     </div>
 </body>
