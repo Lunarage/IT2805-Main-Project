@@ -28,6 +28,8 @@
             let books = data.books;
             let searchResults = document.getElementById('searchResults');
 
+            searchResults.innerHTML = '';
+
             let table = document.createElement('table');
             let header = document.createElement('tr');
             let headerTitle = document.createElement('th');
@@ -47,7 +49,28 @@
             header.appendChild(headerYear);
             table.appendChild(header);
 
-            books.forEach(function(book){
+            let searchText = document.getElementById('searchText').value;
+            let minYear = document.getElementById('minYear').value;
+            let maxYear = document.getElementById('maxYear').value;
+
+            //Default to unfiltered data
+            let booksSearch = books;
+            if(searchText){
+                let regex = RegExp(searchText,'gi');
+                booksSearch = booksSearch.filter(function(book){
+                    return regex.test(book.title) || regex.test(book.author);
+                });
+            }if(minYear){
+                booksSearch = booksSearch.filter(function(book){
+                    return parseInt(book.year) >= parseInt(minYear);
+                });
+            }if(maxYear){
+                booksSearch = booksSearch.filter(function(book){
+                    return parseInt(book.year) <= parseInt(maxYear);
+                });
+            }
+
+            booksSearch.forEach(function(book){
                 let row = document.createElement('tr');
                 let titleData = document.createElement('td');
                 titleData.innerText = book.title;
@@ -143,13 +166,16 @@
                         searchTextInput = document.createElement('input');
                         searchTextLabel = document.createElement('label');
                         searchTextInput.setAttribute('type','text');
-                        searchTextLabel.setAttribute('id','searchText');
+                        searchTextInput.setAttribute('onKeypress','if(event.key == "Enter"){searchBooks();}');
+                        searchTextInput.setAttribute('id','searchText');
+                        searchTextLabel.setAttribute('for','searchText');
 
                         yearMinInput = document.createElement('input');
                         yearMinLabel = document.createElement('label');
                         yearMinInput.setAttribute('id','minYear');
                         yearMinInput.setAttribute('type','number');
                         yearMinInput.setAttribute('class','year');
+                        yearMinInput.setAttribute('onKeypress','if(event.key == "Enter"){searchBooks();}');
                         yearMinLabel.setAttribute('for','minYear');
 
                         yearMaxInput = document.createElement('input');
@@ -157,16 +183,23 @@
                         yearMaxInput.setAttribute('id','maxYear');
                         yearMaxInput.setAttribute('type','number');
                         yearMaxInput.setAttribute('class','year');
+                        yearMaxInput.setAttribute('onKeypress','if(event.key == "Enter"){searchBooks();}');
                         yearMaxLabel.setAttribute('for','maxYear');
+
+                        searchButton = document.createElement('button');
+                        searchButton.setAttribute('type','button');
+                        searchButton.setAttribute('onClick','searchBooks()');
 
                         if(lang == 'no'){
                             searchTextLabel.innerText = 'Søketekst';
                             yearMinLabel.innerText = 'Fra og med';
                             yearMaxLabel.innerText = 'Til og med';
+                            searchButton.innerText = 'Søk';
                         }else if(lang == 'en'){
                             searchTextLabel.innerText = 'Search Text';
                             yearMinLabel.innerText = 'From inclusive';
                             yearMaxLabel.innerText = 'To inclusive';
+                            searchButton.innerText = 'Search';
                         }
 
                         content.appendChild(searchTextLabel);
@@ -175,6 +208,7 @@
                         content.appendChild(yearMinInput);
                         content.appendChild(yearMaxLabel);
                         content.appendChild(yearMaxInput);
+                        content.appendChild(searchButton);
 
                         searchResults = document.createElement('div');
                         searchResults.setAttribute('id','searchResults');

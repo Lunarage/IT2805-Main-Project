@@ -28,6 +28,10 @@ function getHeader(page){
 
     //What happens when the request changes state a.k.a what we do when we get the response
     request.onreadystatechange = function(){
+        //readyState 0 = unsent
+        //readyState 1 = opened, insert loading animation here?
+        //readyState 2 = sent
+        //readyState 3 = loading
         //readyState 4 = response ready
         if(this.readyState == 4){
             //clear the previous content
@@ -35,6 +39,7 @@ function getHeader(page){
             content.innerHTML = this.response;
             let navLink = document.getElementById(page);
             addClass(page,'selected');
+            //TODO: Language spesific names in the nav links
         }
     }
     request.open('GET','modules/header.html',true);
@@ -60,5 +65,6 @@ function getFooter(){
     request.send();
 }
 
-function setCurrentNav(page){
+function toggleMenu(){
+    toggleClass('mainMenu','hidden');
 }
