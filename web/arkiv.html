@@ -196,7 +196,8 @@
                     content.appendChild(para);
                 }
 
-                content.appendChild(generatePictureGallery(data.pictures));
+                pictures = data.pictures;
+                content.appendChild(generatePictureGallery(pictures));
 
             }
             else if(GET.page == 'books'){

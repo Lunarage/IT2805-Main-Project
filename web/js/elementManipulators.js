@@ -47,11 +47,14 @@ function getHeader(page){
             let navDaljer = document.getElementById('navDaljer');
             let navKontakt = document.getElementById('navKontakt');
             let langButton = document.getElementById('langButton');
+            let menuButton = document.getElementById('menuButton');
             if(GET.lang == 'no'){
                 //Set HTML attribute lang to approriate language
                 document.documentElement.setAttribute('lang','no_NB');
                 addClass(langButton.id, 'en')
                 langButton.setAttribute('href','?lang=en');
+                langButton.innerText = 'English';
+                menuButton.innerText = 'Meny';
                 navIndex.setAttribute('href',navIndex.getAttribute('href')+'?lang=no');
                 navIndex.innerText='Forside';
                 navArkiv.setAttribute('href',navArkiv.getAttribute('href')+'?lang=no');
@@ -69,8 +72,10 @@ function getHeader(page){
                 document.documentElement.setAttribute('lang','en');
                 addClass(langButton.id, 'no')
                 langButton.setAttribute('href','?lang=no');
+                langButton.innerText = 'Norsk';
+                menuButton.innerText = 'Menu';
                 navIndex.setAttribute('href',navIndex.getAttribute('href')+'?lang=en');
-                navIndex.innerText='Front Page';
+                navIndex.innerText='Home';
                 navArkiv.setAttribute('href',navArkiv.getAttribute('href')+'?lang=en');
                 navArkiv.innerText='Archive';
                 navIdentifisering.setAttribute('href',navIdentifisering.getAttribute('href')+'?lang=en');
