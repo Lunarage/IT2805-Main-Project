@@ -5,11 +5,13 @@ function openWindow(data, identifisering = false){
 
     let popUpWindow = document.getElementById('popUpWindow');
     popUpWindow.innerHTML = '';
-    let title = document.createElement('h1');
-    title.innerText = data.title;
+
     let closeButton = document.createElement('button');
     closeButton.setAttribute('onClick','closeWindow()');
-    closeButton.innerText = 'Close Window'; //TODO: Replace with icon
+
+    let title = document.createElement('h1');
+    title.innerText = data.title;
+    title.appendChild(closeButton);
 
     let picture = document.createElement('img');
     picture.setAttribute('src',data.picture);
@@ -20,7 +22,6 @@ function openWindow(data, identifisering = false){
     desc.innerText = data.longDesc;
 
     popUpWindow.appendChild(title);
-    popUpWindow.appendChild(closeButton);
     popUpWindow.appendChild(picture);
     popUpWindow.appendChild(desc);
     resizePicture();

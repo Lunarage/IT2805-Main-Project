@@ -39,7 +39,49 @@ function getHeader(page){
             content.innerHTML = this.response;
             let navLink = document.getElementById(page);
             addClass(page,'selected');
-            //TODO: Language specific names in the nav links
+
+            let navIndex = document.getElementById('navIndex');
+            let navArkiv = document.getElementById('navArkiv');
+            let navIdentifisering = document.getElementById('navIdentifisering');
+            let navHjelpOss = document.getElementById('navHjelpOss');
+            let navDaljer = document.getElementById('navDaljer');
+            let navKontakt = document.getElementById('navKontakt');
+            let langButton = document.getElementById('langButton');
+            if(GET.lang == 'no'){
+                //Set HTML attribute lang to approriate language
+                document.documentElement.setAttribute('lang','no_NB');
+                addClass(langButton.id, 'en')
+                langButton.setAttribute('href','?lang=en');
+                navIndex.setAttribute('href',navIndex.getAttribute('href')+'?lang=no');
+                navIndex.innerText='Forside';
+                navArkiv.setAttribute('href',navArkiv.getAttribute('href')+'?lang=no');
+                navArkiv.innerText='Arkiv';
+                navIdentifisering.setAttribute('href',navIdentifisering.getAttribute('href')+'?lang=no');
+                navIdentifisering.innerText='Identifisering';
+                navHjelpOss.setAttribute('href',navHjelpOss.getAttribute('href')+'?lang=no');
+                navHjelpOss.innerText='Hjelp Oss';
+                navDaljer.setAttribute('href',navDaljer.getAttribute('href')+'?lang=no');
+                navDaljer.innerText='Daljer';
+                navKontakt.setAttribute('href',navKontakt.getAttribute('href')+'?lang=no');
+                navKontakt.innerText='Kontakt';
+            }else if(GET.lang == 'en'){
+                //Set HTML attribute lang to approriate language
+                document.documentElement.setAttribute('lang','en');
+                addClass(langButton.id, 'no')
+                langButton.setAttribute('href','?lang=no');
+                navIndex.setAttribute('href',navIndex.getAttribute('href')+'?lang=en');
+                navIndex.innerText='Front Page';
+                navArkiv.setAttribute('href',navArkiv.getAttribute('href')+'?lang=en');
+                navArkiv.innerText='Archive';
+                navIdentifisering.setAttribute('href',navIdentifisering.getAttribute('href')+'?lang=en');
+                navIdentifisering.innerText='Identification';
+                navHjelpOss.setAttribute('href',navHjelpOss.getAttribute('href')+'?lang=en');
+                navHjelpOss.innerText='Help Us';
+                navDaljer.setAttribute('href',navDaljer.getAttribute('href')+'?lang=en');
+                navDaljer.innerText='Medals';
+                navKontakt.setAttribute('href',navKontakt.getAttribute('href')+'?lang=en');
+                navKontakt.innerText='Contact';
+            }
         }
     }
     request.open('GET','modules/header.html',true);
@@ -59,6 +101,13 @@ function getFooter(){
             //clear the previous content
             content.innerHTML = "";
             content.innerHTML = this.response;
+
+            let footerKontakt = document.getElementById('footerKontakt');
+            if(GET.lang == 'no'){
+                footerKontakt.setAttribute('href', footerKontakt.getAttribute('href') + '?lang=no');
+            }else if(GET.lang == 'en'){
+                footerKontakt.setAttribute('href', footerKontakt.getAttribute('href') + '?lang=en');
+            }
         }
     }
     request.open('GET','modules/footer.html',true);

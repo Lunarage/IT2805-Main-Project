@@ -24,7 +24,7 @@
 
         var data = {};
 
-        function searchBooks(){
+        function searchBooks(orderBy = null, reverse = false){
             let books = data.books;
             let searchResults = document.getElementById('searchResults');
 
@@ -35,6 +35,45 @@
             let headerTitle = document.createElement('th');
             let headerAuthor = document.createElement('th');
             let headerYear = document.createElement('th');
+
+            //Set the appropriate sorting classes and function calls in the headers
+            if(orderBy == 'title'){
+                if(reverse){
+                    headerTitle.setAttribute('class','orderByReversed');
+                    headerTitle.setAttribute('onClick','searchBooks("title",false)');
+                }else{
+                    headerTitle.setAttribute('class','orderBy');
+                    headerTitle.setAttribute('onClick','searchBooks("title",true)');
+                }
+                headerAuthor.setAttribute('onClick','searchBooks("author",false)');
+                headerYear.setAttribute('onClick','searchBooks("year",false)');
+            }else if(orderBy == 'author'){
+                if(reverse){
+                    headerAuthor.setAttribute('class','orderByReversed');
+                    headerAuthor.setAttribute('onClick','searchBooks("author",false)');
+                }else{
+                    headerAuthor.setAttribute('class','orderBy');
+                    headerAuthor.setAttribute('onClick','searchBooks("author",true)');
+                }
+                headerTitle.setAttribute('onClick','searchBooks("title",false)');
+                headerYear.setAttribute('onClick','searchBooks("year",false)');
+            }else if(orderBy == 'year'){
+                if(reverse){
+                    headerYear.setAttribute('class','orderByReversed');
+                    headerYear.setAttribute('onClick','searchBooks("year",false)');
+                }else{
+                    headerYear.setAttribute('class','orderBy');
+                    headerYear.setAttribute('onClick','searchBooks("year",true)');
+                }
+                headerTitle.setAttribute('onClick','searchBooks("title",false)');
+                headerAuthor.setAttribute('onClick','searchBooks("author",false)');
+            }else{
+                headerTitle.setAttribute('onClick','searchBooks("title",false)');
+                headerAuthor.setAttribute('onClick','searchBooks("author",false)');
+                headerYear.setAttribute('onClick','searchBooks("year",false)');
+            }
+
+            //Set the appropriate language
             if(GET.lang == 'no'){
                 headerTitle.innerText = 'Tittel';
                 headerAuthor.innerText = 'Forfatter';
@@ -44,6 +83,7 @@
                 headerAuthor.innerText = 'Author';
                 headerYear.innerText = 'Year';
             }
+
             header.appendChild(headerTitle);
             header.appendChild(headerAuthor);
             header.appendChild(headerYear);
@@ -53,8 +93,9 @@
             let minYear = document.getElementById('minYear').value;
             let maxYear = document.getElementById('maxYear').value;
 
-            //Default to unfiltered data
-            let booksSearch = books;
+            //Default to copy of unfiltered data
+            let booksSearch = books.slice();
+            //Filter array if given parameter is set
             if(searchText){
                 let regex = RegExp(searchText,'gi');
                 booksSearch = booksSearch.filter(function(book){
@@ -70,6 +111,22 @@
                 });
             }
 
+            //Sort result
+            if(orderBy == 'year'){
+                booksSearch = booksSearch.sort(function(a,b){
+                    return parseInt(a.year)-parseInt(b.year);
+                });
+            }
+            else if(orderBy == 'title'){
+                booksSearch = booksSearch.sort(function(a,b){
+                    return
+                });
+            }
+            if(reverse == true){
+                booksSearch = booksSearch.reverse();
+            }
+
+            //Print result
             booksSearch.forEach(function(book){
                 let row = document.createElement('tr');
                 let titleData = document.createElement('td');
@@ -155,6 +212,7 @@
                     content.appendChild(para);
                 }
 
+
                 searchTextInput = document.createElement('input');
                 searchTextLabel = document.createElement('label');
                 searchTextInput.setAttribute('type','text');
@@ -168,14 +226,17 @@
                 yearMinInput.setAttribute('type','number');
                 yearMinInput.setAttribute('class','year');
                 yearMinInput.setAttribute('onKeypress','if(event.key == "Enter"){searchBooks();}');
+                yearMinInput.setAttribute('placeholder','1909');
                 yearMinLabel.setAttribute('for','minYear');
 
+                yearMaxDiv = document.createElement('div');
                 yearMaxInput = document.createElement('input');
                 yearMaxLabel = document.createElement('label');
                 yearMaxInput.setAttribute('id','maxYear');
                 yearMaxInput.setAttribute('type','number');
                 yearMaxInput.setAttribute('class','year');
                 yearMaxInput.setAttribute('onKeypress','if(event.key == "Enter"){searchBooks();}');
+                yearMaxInput.setAttribute('placeholder','2029');
                 yearMaxLabel.setAttribute('for','maxYear');
 
                 searchButton = document.createElement('button');
@@ -184,27 +245,35 @@
 
                 if(GET.lang == 'no'){
                     searchTextLabel.innerText = 'Søketekst';
+                    searchTextInput.setAttribute('placeholder','Tittel/Forfatter');
                     yearMinLabel.innerText = 'Fra og med';
                     yearMaxLabel.innerText = 'Til og med';
                     searchButton.innerText = 'Søk';
                 }else if(GET.lang == 'en'){
                     searchTextLabel.innerText = 'Search Text';
+                    searchTextInput.setAttribute('placeholder','Title/Author');
                     yearMinLabel.innerText = 'From inclusive';
                     yearMaxLabel.innerText = 'To inclusive';
                     searchButton.innerText = 'Search';
                 }
 
-                content.appendChild(searchTextLabel);
-                content.appendChild(searchTextInput);
-                content.appendChild(yearMinLabel);
-                content.appendChild(yearMinInput);
-                content.appendChild(yearMaxLabel);
-                content.appendChild(yearMaxInput);
-                content.appendChild(searchButton);
+                let searchFieldDiv = document.createElement('div');
+                searchFieldDiv.setAttribute('class','searchField');
+
+                searchFieldDiv.appendChild(searchTextLabel);
+                searchFieldDiv.appendChild(searchTextInput);
+                searchFieldDiv.appendChild(yearMinLabel);
+                searchFieldDiv.appendChild(yearMinInput);
+                searchFieldDiv.appendChild(yearMaxLabel);
+                searchFieldDiv.appendChild(yearMaxInput);
+                searchFieldDiv.appendChild(searchButton);
+
+                content.appendChild(searchFieldDiv);
 
                 searchResults = document.createElement('div');
                 searchResults.setAttribute('id','searchResults');
                 content.appendChild(searchResults);
+
                 searchBooks();
             }
         }
