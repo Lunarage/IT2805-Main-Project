@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no_NB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,7 +64,8 @@
 
                 content.appendChild(buttonBox);
 
-            }else if(GET.page == 'pictures'){
+            }
+            else if(GET.page == 'pictures'){
                 data = data.pictures;
                 //Create an element and append it to content
                 let header = document.createElement('h1');
@@ -77,8 +78,10 @@
                     content.appendChild(para);
                 }
 
-                content.appendChild(generatePictureGallery(data.pictures));
-            }else if(GET.page == 'audio'){
+                pictures = data.pictures;
+                content.appendChild(generatePictureGallery(pictures));
+            }
+            else if(GET.page == 'audio'){
                 data = data.audio;
                 //Create an element and append it to content
                 let header = document.createElement('h1');

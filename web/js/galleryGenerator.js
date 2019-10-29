@@ -13,7 +13,7 @@ function generatePictureGallery(data, identifisering = false){
         image.setAttribute('alt',data[i].shortDesc);
 
         let link = document.createElement('a');
-        link.setAttribute('onClick','openWindow('+JSON.stringify(data[i])+','+identifisering+')');
+        link.setAttribute('onClick','openWindow('+i+','+identifisering+')');
         link.appendChild(image);
 
         let desc = document.createElement('p');
@@ -27,7 +27,6 @@ function generatePictureGallery(data, identifisering = false){
     }
     return gallery;
 }
-
 
 function generateAudioGallery(data,){
     let gallery = document.createElement('div');
