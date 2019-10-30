@@ -28,7 +28,10 @@ function generatePictureGallery(data, identifisering = false){
     return gallery;
 }
 
-function generateAudioGallery(data,){
+//Oppdateres i
+var clips = [];
+
+function generateAudioGallery(data){
     let gallery = document.createElement('div');
     gallery.setAttribute('class','audioGallery');
     for(let i = 0; i < data.length; i++){
@@ -38,22 +41,36 @@ function generateAudioGallery(data,){
         let title = document.createElement('h2');
         title.innerText = data[i].title;
 
-        //TODO: Do not auto load the audio element, but rather create a button that loads the requested audio + autoplay
-        let player = document.createElement('audio');
-        player.setAttribute('controls','')
-        let source = document.createElement('source');
-        source.setAttribute('src',data[i].audio);
-        source.setAttribute('type','audio/mpeg');
-        player.appendChild(source);
+        let playButton = document.createElement('button');
+        playButton.setAttribute('onClick','loadAudio('+i+',this)');
+        playButton.setAttribute('class','playButton');
+
+        let playDiv = document.createElement('div');
+        playDiv.appendChild(playButton);
 
         let desc = document.createElement('p');
         desc.innerText = data[i].shortDesc;
 
         frame.appendChild(title);
-        frame.appendChild(player);
+        frame.appendChild(playDiv);
         frame.appendChild(desc);
 
         gallery.appendChild(frame);
     }
     return gallery;
+}
+
+function loadAudio(index,element){
+        let player = document.createElement('audio');
+        player.setAttribute('controls','')
+        player.setAttribute('autoplay','')
+
+        let source = document.createElement('source');
+        source.setAttribute('src',clips[index].audio);
+        source.setAttribute('type','audio/mpeg');
+        player.appendChild(source);
+        console.log(element.parentElement);
+
+        element.parentElement.appendChild(player);
+        element.parentElement.removeChild(element);
 }

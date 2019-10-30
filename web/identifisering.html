@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel='icon' href='media/icons/favicon_samfundet.ico'>
     <script src='js/functions.js'></script>
     <script src='js/elementManipulators.js'></script>
     <script src='js/galleryGenerator.js'></script>
@@ -94,7 +95,8 @@
                     content.appendChild(para);
                 }
 
-                content.appendChild(generateAudioGallery(data.audio));
+                clips = data.audio;
+                content.appendChild(generateAudioGallery(clips));
             }
         }
     </script>

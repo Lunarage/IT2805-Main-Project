@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel='icon' href='media/icons/favicon_samfundet.ico'>
     <script src='js/functions.js'></script>
     <script src='js/elementManipulators.js'></script>
     <title>Arkivet</title>
@@ -34,17 +35,39 @@
             header.innerText = data.title;
             content.appendChild(header);
 
+            let contactDiv = document.createElement('div');
+            contactDiv.setAttribute('class','contact');
+
+            let phoneLabel = document.createElement('label');
             let phone = document.createElement('p');
             phone.innerText = data.tel;
-            content.appendChild(phone);
 
+            let emailLabel = document.createElement('label');
             let email = document.createElement('p');
             email.innerText = data.email;
-            content.appendChild(email);
 
+            let addressLabel = document.createElement('label');
             let address = document.createElement('p');
             address.innerText = data.address;
-            content.appendChild(address);
+
+            if(GET.lang == 'no'){
+                phoneLabel.innerText = 'Telefon';
+                emailLabel.innerText = 'E-post';
+                addressLabel.innerText = 'Adresse';
+            }else if(GET.lang == 'en'){
+                phoneLabel.innerText = 'Phone';
+                emailLabel.innerText = 'E-mail';
+                addressLabel.innerText = 'Address';
+            }
+
+            contactDiv.appendChild(phoneLabel);
+            contactDiv.appendChild(phone);
+            contactDiv.appendChild(emailLabel);
+            contactDiv.appendChild(email);
+            contactDiv.appendChild(addressLabel);
+            contactDiv.appendChild(address);
+
+            content.appendChild(contactDiv);
         }
     </script>
 </head>
