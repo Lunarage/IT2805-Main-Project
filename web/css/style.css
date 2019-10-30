@@ -297,6 +297,26 @@ div.samfundet{
 #rightcolumn>h1{
     text-align:center;
 }
+
+.contact{
+    display: grid;
+    grid-template-columns: fit-content(200px) fit-content(400px);
+}
+
+.contact>label{
+    grid-column: 1 / span 1;
+    margin: 0;
+    padding: 8px 16px;
+    text-align: right;
+    border-right: 2px solid var(--dark);
+}
+
+.contact>p{
+    grid-column: 2 / span 1;
+    margin: 0;
+    padding: 8px 16px;
+}
+
 /* }}} */
 
 /* {{{ Galleries */
@@ -314,6 +334,19 @@ div.audioGallery{
     justify-content: center;
 }
 
+.playButton{
+    border: none;
+    background-color: var(--light-red);
+    border-radius: 8px;
+    width: 56px;
+    height: 48px;
+    background-image: url('../media/icons/play.svg');
+    background-size: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
 .frame{
     background-color: var(--beige-bg);
     border-radius: 5px;
@@ -325,6 +358,13 @@ div.audioGallery{
     text-align: center;
     margin: 0;
     margin-bottom: 16px;
+}
+
+.frame>div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery>.frame>p{

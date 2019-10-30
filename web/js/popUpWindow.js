@@ -1,5 +1,5 @@
 //Updated in identifisering.html and arkiv.html
-var pictures = {};
+var pictures = [];
 //Global variable to keep track of current open picture
 //Changes when openWindow is called
 var globalIndex = null;
@@ -39,7 +39,6 @@ function touchEnd(event){
     touchX = null;
     touchY = null;
 }
-
 
 function nextPicture(){
     openWindow(globalIndex+1);
