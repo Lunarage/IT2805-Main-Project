@@ -29,10 +29,20 @@
 
 <section>
     <h2>Changes to the original design</h2>
+    <h3>Changes to the general design</h3>
+    <p>
+        The language flag has been moved to the menu in order to make it tidier with the mobile design.
+        Text explicitly stating which language it changes to has also been added to the language flag.
+        The footer is changed to be the same on desktop and mobile.
+    </p>
     <h3>Changes to arkiv.html</h3>
     <p>
         A search button was added to the written material part.
         We simply forgot to think about this in the design phase.
+    </p>
+    <h3>Changes to daljer.html</h3>
+    <p>
+        The need for this page was miscommunicated and has thus been totally redefined.
     </p>
 </section>
 
@@ -66,6 +76,7 @@
     <p>
         Modularity was achieved by using XMLHttpRequests and was implemented by Magne.
         This method was chosen because it will be easy to integrate with a back end at at later point in time.
+        XMLHttpRequests are also supported by essentially all browsers.
         The header and footer is stored in separate files as indicated in the organizational scheme.
         The same method was used to retrieve data from json files.
         When this project is finished, the json data files will be replaced by a back end, using PostgreSQL and PHP, that essentially sends data in the same json format.
