@@ -450,7 +450,7 @@ div.audioGallery{
 
 #popUpWindow>p{
     grid-column: 2 / span 1;
-    grid-row: 3 / span 1;
+    /* grid-row: 3 / span 1; */
     margin: 0;
     padding: 8px;
 }

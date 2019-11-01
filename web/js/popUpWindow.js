@@ -9,6 +9,8 @@ function keyPressPicture(event){
         prevPicture();
     }else if(event.key == 'ArrowRight'){
         nextPicture();
+    }else if(event.key == 'Escape'){
+        closeWindow();
     }
 }
 
@@ -84,11 +86,19 @@ function openWindow(index, identifisering = false){
         let desc = document.createElement('p');
         desc.innerText = pictureData.longDesc;
 
+        let emailDesc = document.createElement('p');
+        if(GET.lang = 'no'){
+            emailDesc.innerText = 'Hvis du vet noe om dette bildet, send oss gjerne en e-post';
+        }else if(GET.lang = 'en'){
+            emailDesc.innerText = 'If you know something about this picture, please send us an e-mail';
+        }
+
         popUpWindow.appendChild(title);
         popUpWindow.appendChild(leftButton);
         popUpWindow.appendChild(picture);
         popUpWindow.appendChild(rightButton);
         popUpWindow.appendChild(desc);
+        popUpWindow.appendChild(emailDesc);
 
         document.addEventListener('keydown',keyPressPicture);
         document.addEventListener('touchstart',touchStart);
