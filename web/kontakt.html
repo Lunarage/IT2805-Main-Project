@@ -38,10 +38,6 @@
             let contactDiv = document.createElement('div');
             contactDiv.setAttribute('class','contact');
 
-            let phoneLabel = document.createElement('label');
-            let phone = document.createElement('p');
-            phone.innerText = data.tel;
-
             let emailLabel = document.createElement('label');
             let email = document.createElement('p');
             email.innerText = data.email;
@@ -51,17 +47,13 @@
             address.innerText = data.address;
 
             if(GET.lang == 'no'){
-                phoneLabel.innerText = 'Telefon';
                 emailLabel.innerText = 'E-post';
                 addressLabel.innerText = 'Adresse';
             }else if(GET.lang == 'en'){
-                phoneLabel.innerText = 'Phone';
                 emailLabel.innerText = 'E-mail';
                 addressLabel.innerText = 'Address';
             }
 
-            contactDiv.appendChild(phoneLabel);
-            contactDiv.appendChild(phone);
             contactDiv.appendChild(emailLabel);
             contactDiv.appendChild(email);
             contactDiv.appendChild(addressLabel);
