@@ -503,7 +503,9 @@ a:hover{
 }
 
 a.button{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1 1 10%;
     padding: 16px;
     background: var(--light-red);
