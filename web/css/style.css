@@ -14,6 +14,8 @@
 
     /* Other variables */
     --page-width: 1280px;
+    --footer-height: 50px;
+
 }
 /* }}} */
 
@@ -119,7 +121,7 @@ nav>a.selected:before{
     font-weight: bold;
     font-family: inherit;
     text-transform: uppercase;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 #langButton{
@@ -244,9 +246,17 @@ div.samfundet{
     background-repeat: no-repeat;
     background-position: center;
     width: 50px;
-    height: 50px;
+    height: var(--footer-height);
     margin: 0 8px;
 }
+@media only screen and (max-width: 600px){ 
+    #footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%
+    }
+}
+
 /* }}} */
 
 /* {{{ Structure */
@@ -258,7 +268,8 @@ div.samfundet{
 
 #container{
     background-color: var(--light-bg);
-    width: var(--page-width);
+    width: 80%;
+    /* width: var(--page-width); */
     margin: 20px auto;
 }
 
@@ -268,7 +279,24 @@ div.samfundet{
 
 @media only screen and (max-width: 1280px){
     #container{
+        width: 95%;
+    }
+
+    
+}
+
+/* mobile phones*/
+@media only screen and (max-width: 600px){
+    #container{
+        position: relative;
+        width: 100%;
         margin: 0;
+        min-height: 100vh;
+        padding-bottom: var(--footer-height);
+    }
+    
+    #content{
+        padding: 8px;
     }
 }
 
@@ -295,10 +323,6 @@ div.samfundet{
 }
 
 @media only screen and (max-width: 1280px){
-    #container{
-        width: 100%;
-    }
-
     #leftcolumn{
         width:100%;
     }
