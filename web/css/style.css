@@ -59,13 +59,13 @@ header{
 }
 
 #header div:first-child{
-    padding: 16px;
+    padding: 8px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
     align-content: flex-start;
-    width: 282px;
+    width: 216px;
 }
 
 nav{
@@ -108,13 +108,9 @@ nav>a.selected:before{
 
 #menuButton{
     background: var(--light-red);
-    background-image: url('../media/icons/hamburger.svg');
-    background-repeat: no-repeat;
-    background-position: right center;
-    margin: 16px;
+    margin: 8px;
     padding: 16px;
-    padding-right: 48px;
-    border-radius: 16px;
+    border-radius: 5px;
     border: none;
     color: var(--light);
     font-size: 1.4em;
@@ -148,6 +144,50 @@ nav>a.selected:before{
 
 #langButton.en{
     background-image: url('../media/icons/flag-for-united-kingdom.png');
+}
+
+div.samfundetlogo{
+    background: url('../media/icons/samfundet_logo_med_tekst.svg');
+    background-size: 200px auto;
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 200px;
+    height: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+    #menuButton{
+        background: var(--light-red);
+        background-image: url('../media/icons/hamburger.svg');
+        background-repeat: no-repeat;
+        background-position: right center;
+        margin: 16px;
+        padding: 16px;
+        padding-right: 48px;
+        border-radius: 16px;
+        border: none;
+        color: var(--light);
+        font-size: 1.4em;
+        font-weight: bold;
+        font-family: inherit;
+        text-transform: uppercase;
+        cursor: pointer; 
+    }
+
+    div.samfundetlogo{
+        background-size: 250px auto;
+        width: 250px;
+    }
+
+    #header div:first-child{
+        padding: 16px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: flex-start;
+        width: 282px;
+    }
 }
 
 @media only screen and (min-width: 1024px){
@@ -202,15 +242,6 @@ nav>a.selected:before{
     #langButton{
         order: 99;
     }
-}
-
-div.samfundetlogo{
-    background: url('../media/icons/samfundet_logo_med_tekst.svg');
-    background-size: 250px auto;
-    background-repeat: no-repeat;
-    background-position: left center;
-    width: 250px;
-    height: 30px;
 }
 /* }}} */
 
