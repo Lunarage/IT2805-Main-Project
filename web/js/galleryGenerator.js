@@ -36,12 +36,12 @@ function generatePictureGallery(data, identifisering = false) {
 //Oppdateres i
 var clips = [];
 
-function generateAudioGallery(data) {
-  let gallery = document.createElement("div");
-  gallery.setAttribute("class", "audioGallery");
-  for (let i = 0; i < data.length; i++) {
-    let frame = document.createElement("div");
-    frame.setAttribute("class", "frame");
+function generateAudioGallery(data, identifisering = false){
+    let gallery = document.createElement('div');
+    gallery.setAttribute('class','audioGallery');
+    for(let i = 0; i < data.length; i++){
+        let frame = document.createElement('div');
+        frame.setAttribute('class','frame');
 
     let title = document.createElement("h2");
     title.innerText = data[i].title;
@@ -59,10 +59,25 @@ function generateAudioGallery(data) {
     frame.appendChild(title);
     frame.appendChild(playDiv);
     frame.appendChild(desc);
+        if(identifisering){
+            let mailPara = document.createElement('p');
+            let mailLink = document.createElement('a');
+            mailLink.setAttribute('href','mailto:arkivet@samfundet.no?Subject=['+data[i].title+']');
+            mailLink.setAttribute('target','_blank');
+            if(GET.lang == 'no'){
+                mailPara.innerText = "Hvis du vet noe om dette lydklippet,";
+                mailLink.innerText = " send oss en e-post";
+            }else if(GET.lang == 'en'){
+                mailPara.innerText = "If you know anything about this audio clip,";
+                mailLink.innerText = " send us an e-mail";
+            }
+            mailPara.appendChild(mailLink);
+            frame.appendChild(mailPara);
+        }
 
-    gallery.appendChild(frame);
-  }
-  return gallery;
+        gallery.appendChild(frame);
+    }
+    return gallery;
 }
 
 function loadAudio(index, element) {

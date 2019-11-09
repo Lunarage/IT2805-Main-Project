@@ -29,6 +29,9 @@
             //Where we want to put new elements
             let content = document.getElementById('content');
 
+            //Is this identifisering?
+            identifisering = true;
+
             //clear the previous content
             content.innerHTML = '';
 
@@ -80,7 +83,7 @@
                 }
 
                 pictures = data.pictures;
-                content.appendChild(generatePictureGallery(pictures));
+                content.appendChild(generatePictureGallery(pictures,true));
             }
             else if(GET.page == 'audio'){
                 data = data.audio;
@@ -96,7 +99,7 @@
                 }
 
                 clips = data.audio;
-                content.appendChild(generateAudioGallery(clips));
+                content.appendChild(generateAudioGallery(clips, true));
             }
         }
     </script>
