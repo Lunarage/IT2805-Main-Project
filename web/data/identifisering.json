@@ -1,6 +1,7 @@
 {
 "en":{
     "index":{
+        "title":"Identification",
         "paragraphs":[
             "Something about the things"
         ],
@@ -151,6 +152,7 @@
 },
 "no":{
     "index":{
+        "title":"Identifisering",
         "paragraphs":[
             "Something about the things"
         ],

@@ -1,6 +1,7 @@
 {
 "en":{
     "index":{
+        "title":"Archive",
         "paragraphs":[
             "Something about the things"
         ],
@@ -56,7 +57,7 @@
              "author": "UKA-97",
              "year":"1997"
            },
-		   
+
            { "title": "Alt er sex UKEbibel",
              "author": "UKA-97",
              "year":"1997"
@@ -240,6 +241,7 @@
 },
 "no":{
     "index":{
+        "title":"Arkiv",
         "paragraphs":[
             "Something about the things"
         ],
@@ -295,7 +297,7 @@
              "author": "UKA-97",
              "year":"1997"
            },
-		   
+
            { "title": "Alt er sex UKEbibel",
              "author": "UKA-97",
              "year":"1997"
