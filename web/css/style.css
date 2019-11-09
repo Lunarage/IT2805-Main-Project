@@ -626,6 +626,14 @@ button:not([class]) {
   border-spacing: 0;
 }
 
+#searchResults table tr:nth-child(2n){
+    background-color: var(--beige-bg);
+}
+
+#searchResults table tr:nth-child(2n-1){
+    background-color: var(--light-bg);
+}
+
 #searchResults td,
 #searchResults th {
   padding: 8px;
