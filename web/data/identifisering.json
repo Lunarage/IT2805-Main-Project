@@ -13,59 +13,125 @@
             "Something about the pictures"
         ],
         "pictures":[
-            {"title":"Poster",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+            {"title":"idb-001",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-001_thumbnail.jpg",
+             "picture": "media/identifisering/idb-001.jpg"
             },
-            {"title":"Poster",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+            {"title":"idb-002",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-002_thumbnail.jpg",
+             "picture": "media/identifisering/idb-002.jpg"
             },
-            {"title":"Poster",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+            {"title":"idb-003",
+             "shortDesc": "Kantina NTH 1966",
+             "longDesc": "Kantina NTH 1966",
+             "thumbnail": "media/pictures/idb-003_thumbnail.jpg",
+             "picture": "media/identifisering/idb-003.jpg"
             },
-            {"title":"Poster",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+            {"title":"idb-004",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-004_thumbnail.jpg",
+             "picture": "media/identifisering/idb-004.jpg"
             },
-            {"title":"Poster",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+			{"title":"idb-005",
+             "shortDesc": "SIT Mai 1989",
+             "longDesc": "SIT Mai 1989",
+             "thumbnail": "media/pictures/idb-005_thumbnail.jpg",
+             "picture": "media/identifisering/idb-005.jpg"
             },
-            {"title":"Poster",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+			{"title":"idb-006",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-006_thumbnail.jpg",
+             "picture": "media/identifisering/idb-006.jpg"
             },
-            {"title":"Poster",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+			{"title":"idb-007",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-007_thumbnail.jpg",
+             "picture": "media/identifisering/idb-007.jpg"
             },
-            {"title":"Poster",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+			{"title":"idb-008",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-008_thumbnail.jpg",
+             "picture": "media/identifisering/idb-008.jpg"
             },
-            {"title":"Poster",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+			{"title":"idb-009",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-009_thumbnail.jpg",
+             "picture": "media/identifisering/idb-009.jpg"
+            },
+			{"title":"idb-011",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-011_thumbnail.jpg",
+             "picture": "media/identifisering/idb-011.jpg"
+            },
+			{"title":"idb-012",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-012_thumbnail.jpg",
+             "picture": "media/identifisering/idb-012.jpg"
+            },
+			{"title":"idb-013",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-013_thumbnail.jpg",
+             "picture": "media/identifisering/idb-013.jpg"
+            },
+			{"title":"idb-014",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-014_thumbnail.jpg",
+             "picture": "media/identifisering/idb-014.jpg"
+            },
+			{"title":"idb-015",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-015_thumbnail.jpg",
+             "picture": "media/identifisering/idb-015.jpg"
+            },
+			{"title":"idb-016",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-016_thumbnail.jpg",
+             "picture": "media/identifisering/idb-016.jpg"
+            },
+			{"title":"idb-017",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-017_thumbnail.jpg",
+             "picture": "media/identifisering/idb-017.jpg"
+            },
+			{"title":"idb-018",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-018_thumbnail.jpg",
+             "picture": "media/identifisering/idb-018.jpg"
+            },
+			{"title":"idb-019",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-019_thumbnail.jpg",
+             "picture": "media/identifisering/idb-019.jpg"
+            },
+			{"title":"idb-020",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-020_thumbnail.jpg",
+             "picture": "media/identifisering/idb-020.jpg"
+            },
+			{"title":"idb-021",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-021_thumbnail.jpg",
+             "picture": "media/identifisering/idb-021.jpg"
             }
         ]
     },
@@ -75,25 +141,15 @@
             "Something about the audio clips"
         ],
         "audio":[
-            {"title":"Audio Clip",
-             "shortDesc": "This is an audio clip",
-             "longDesc": "This audio clip is an unidentified clip from some time",
-             "audio": "media/audio/placeholder.mp3"
+            {"title":"Alt er sex",
+             "shortDesc": "Revysanger 97' anbefaler 3:35 - 6:25",
+             "longDesc": "Alle sangene fra revyen alt er sex",
+             "audio": "media/audio/D2-30.mp3"
             },
-            {"title":"Audio Clip",
-             "shortDesc": "This is an audio clip",
-             "longDesc": "This audio clip is an unidentified clip from some time",
-             "audio": "media/audio/placeholder.mp3"
-            },
-            {"title":"Audio Clip",
-             "shortDesc": "This is an audio clip",
-             "longDesc": "This audio clip is an unidentified clip from some time",
-             "audio": "media/audio/placeholder.mp3"
-            },
-            {"title":"Audio Clip",
-             "shortDesc": "This is an audio clip",
-             "longDesc": "This audio clip is an unidentified clip from some time",
-             "audio": "media/audio/placeholder.mp3"
+            {"title":"Snaustrinda",
+             "shortDesc": "Snaustrinda",
+             "longDesc": "Snaustrinda",
+             "audio": "media/audio/D2-33.mp3"
             }
         ]
 
@@ -104,81 +160,152 @@
         "paragraphs":[
             "Something about the things"
         ],
-        "audioButton":"Audio",
-        "pictureButton":"Pictures"
+        "audioButton":"Lydklipp",
+        "pictureButton":"Bilder"
     },
     "pictures":{
-        "title":"Pictures",
+        "title":"Bilder",
         "paragraphs":[
             "Something about the pictures"
         ],
         "pictures":[
-            {"title":"Poster1",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+            {"title":"idb-001",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-001_thumbnail.jpg",
+             "picture": "media/identifisering/idb-001.jpg"
             },
-            {"title":"Poster2",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+            {"title":"idb-002",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-002_thumbnail.jpg",
+             "picture": "media/identifisering/idb-002.jpg"
             },
-            {"title":"Poster3",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+            {"title":"idb-003",
+             "shortDesc": "Kantina NTH 1966",
+             "longDesc": "Kantina NTH 1966",
+             "thumbnail": "media/pictures/idb-003_thumbnail.jpg",
+             "picture": "media/identifisering/idb-003.jpg"
             },
-            {"title":"Poster4",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+            {"title":"idb-004",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-004_thumbnail.jpg",
+             "picture": "media/identifisering/idb-004.jpg"
             },
-            {"title":"Poster5",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+			{"title":"idb-005",
+             "shortDesc": "SIT Mai 1989",
+             "longDesc": "SIT Mai 1989",
+             "thumbnail": "media/pictures/idb-005_thumbnail.jpg",
+             "picture": "media/identifisering/idb-005.jpg"
             },
-            {"title":"Poster6",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+			{"title":"idb-006",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-006_thumbnail.jpg",
+             "picture": "media/identifisering/idb-006.jpg"
             },
-            {"title":"Poster7",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+			{"title":"idb-007",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-007_thumbnail.jpg",
+             "picture": "media/identifisering/idb-007.jpg"
             },
-            {"title":"Poster8",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+			{"title":"idb-008",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-008_thumbnail.jpg",
+             "picture": "media/identifisering/idb-008.jpg"
             },
-            {"title":"Poster9",
-             "shortDesc": "This is a poster",
-             "longDesc": "This poster is really old and presumably from some time long ago",
-             "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-             "picture": "media/pictures/placeholder.jpg"
+			{"title":"idb-009",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-009_thumbnail.jpg",
+             "picture": "media/identifisering/idb-009.jpg"
+            },
+			{"title":"idb-011",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-011_thumbnail.jpg",
+             "picture": "media/identifisering/idb-011.jpg"
+            },
+			{"title":"idb-012",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-012_thumbnail.jpg",
+             "picture": "media/identifisering/idb-012.jpg"
+            },
+			{"title":"idb-013",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-013_thumbnail.jpg",
+             "picture": "media/identifisering/idb-013.jpg"
+            },
+			{"title":"idb-014",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-014_thumbnail.jpg",
+             "picture": "media/identifisering/idb-014.jpg"
+            },
+			{"title":"idb-015",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-015_thumbnail.jpg",
+             "picture": "media/identifisering/idb-015.jpg"
+            },
+			{"title":"idb-016",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-016_thumbnail.jpg",
+             "picture": "media/identifisering/idb-016.jpg"
+            },
+			{"title":"idb-017",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-017_thumbnail.jpg",
+             "picture": "media/identifisering/idb-017.jpg"
+            },
+			{"title":"idb-018",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-018_thumbnail.jpg",
+             "picture": "media/identifisering/idb-018.jpg"
+            },
+			{"title":"idb-019",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-019_thumbnail.jpg",
+             "picture": "media/identifisering/idb-019.jpg"
+            },
+			{"title":"idb-020",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-020_thumbnail.jpg",
+             "picture": "media/identifisering/idb-020.jpg"
+            },
+			{"title":"idb-021",
+             "shortDesc": "",
+             "longDesc": "",
+             "thumbnail": "media/pictures/idb-021_thumbnail.jpg",
+             "picture": "media/identifisering/idb-021.jpg"
             }
         ]
     },
     "audio":{
-        "title":"Audio",
+        "title":"Lydklipp",
         "paragraphs":[
-            "Something about the audio clips"
+            "Lydklippene som ligger her nå er identifisert, vi har bare rotabort de uidentifiserte så disse er placeholdere."
         ],
         "audio":[
-            {"title":"Audio Clip",
-             "shortDesc": "This is an audio clip",
-             "longDesc": "This audio clip is an unidentified clip from some time",
-             "audio": "media/audio/placeholder.mp3"
+            {"title":"Alt er sex",
+             "shortDesc": "Revysanger 97', anbefaler 3:35 - 6:25",
+             "longDesc": "Alle sangene fra revyen alt er sex",
+             "audio": "media/audio/D2-30.mp3"
+            },
+            {"title":"Snaustrinda",
+             "shortDesc": "Snaustrinda",
+             "longDesc": "Snaustrinda",
+             "audio": "media/audio/D2-33.mp3"
             }
         ]
 

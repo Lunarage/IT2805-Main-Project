@@ -2,15 +2,24 @@
 "en":{
     "title":"Help Us",
     "paragraphs":[
-    "English Version",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "Donate to the Archive!",
+    "We accept just about anything Samfundet related, if we allready have it we distribute it amongst the voulenteres at Samfundet. /n Here you can find a list over thing we know we need, but if you have something that isnt on the list just send us an email at arkivet@samfundet.no or mail it to us at: \n \n Arkivet v/Samfundet i Trondhjem \n Elgeseter gate 1, 7030 Trondheim \n\n",
+	"Things the Archive needs:",
+	"Medals from UKA, all of them always. But those we don't have at all is in the album benath.",
+	"- This is just a placeholder :) ",
+	"- Ditto ^ "
+	
     ]
 },
 "no":{
     "title":"Hjelp Oss",
     "paragraphs":[
-    "Norsk Versjon",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "Doner materiale til Arkiver!",
+    "Vi tar i mot alt Samfundet relatert, har vi det allerede passer vi på å gjevnlig få delt ut ekstra materiale til de frivillige på Samfundet. /n Under har vi en liste over tign vi vet at vi mangler, men har du noe liggende er det bare å sende oss en mail på arkivet@samfundet.no eller send det til: \n \n Arkivet v/Studentersamfundet i Trondhjem \n Elgeseter gate 1, 7030 Trondheim \n \n",
+	"Arkivet mangler: \n",
+	"- Ukedaljer, alle alltid, men oversikt over de som mangler helt fra samlinga ligger i albumet under\n",
+	"- Jeg bare skriver dette som en placeholder altså \n",
+	"- Ditto ^ \n"
     ]
 }
 }

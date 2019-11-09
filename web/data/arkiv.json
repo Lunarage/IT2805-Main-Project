@@ -27,38 +27,200 @@
            "Some description of this page"
        ],
        "books":[
-           { "title": "UKA-13 Program",
-             "author": "UKA-13",
+           { "title": "100 år og like leken",
+             "author": "Ragnhild Lian Solbakk m.fl",
+             "year":"2010"
+           },
+           { "title": "'Hjorten' (Trondhjems tivoli) revyviser  utvalg gjennom 40år",
+             "author": "N/A",
+             "year":"N/A"
+           },
+           { "title": "Aarhøneklukk",
+             "author": "Kristian Aunaas m.fl",
+             "year":"2006"
+           },
+           { "title": "Åja visehefte",
+             "author": "UKA-71",
+             "year":"1971"
+           },
+           { "title": "Akademisk radioklubb 52 år. En historie med slagside",
+             "author": "Håkon Solum, Tore Gylver",
+             "year":"1976"
+           },
+           { "title": "Akademiska sångforeningen 1838-1938",
+             "author": "Finn E. Sommerschield",
+             "year":"1938"
+           },
+           { "title": "Alt er sex visehefte",
+             "author": "UKA-97",
+             "year":"1997"
+           },
+		   
+           { "title": "Alt er sex UKEbibel",
+             "author": "UKA-97",
+             "year":"1997"
+           },
+		   { "title": "QST",
+             "author": "N/A",
+             "year":"1946 - 1980"
+           },
+		   { "title": "Årsregnskap",
+             "author": "Samfundet",
+             "year":"1941 - 1980"
+           },
+		   { "title": "Ås studenter i hundre år",
+             "author": "Bernt Karlgård, Bjarne Ljones",
+             "year":"1964"
+           },
+		   { "title": "Bildealbum NTH 50-årsjubileum",
+             "author": "N/A",
+             "year":"N/A"
+           },
+		   { "title": "Bom-t-bom visehefte",
+             "author": "UKA-91",
+             "year":"1991"
+           },
+		   { "title": "Building a future - Final document ISFiT 2009",
+             "author": "N/A",
+             "year":"2009"
+           },
+		   { "title": "Bursdagsmøte oktober 1946",
+             "author": "Styret",
+             "year":"1946"
+           },
+		   { "title": "Cabaret - manus",
+             "author": "N/A",
+             "year":"N/A"
+           },
+		   { "title": "De-Cha-Vi visehefte",
+             "author": "UKA-87",
+             "year":"1987"
+           },
+		   { "title": "Dek-E-Du",
+             "author": "UKA-35",
+             "year":"1935"
+           },
+		   { "title": "Dek-E-Du beretning oppslagsbok",
+             "author": "UKA-35",
+             "year":"1935"
+           },
+		   { "title": "Den gamle sang - 100 år med studentrevymusikk",
+             "author": "Eivind Vrålstad m.fl",
              "year":"2013"
            },
-           { "title": "Teaterprogram UKA",
-             "author": "UKA-13",
-             "year":"2013"
+		   { "title": "Det umulige tar bare litt lengre tid. ISFiT 25 år",
+             "author": "Bertine Tønseth, Elise Farstad Djupedal",
+             "year":"2015"
            },
-           { "title": "Teaterprogram",
+		   { "title": "Det var dette vi lagde UKEbok",
              "author": "UKA-15",
              "year":"2015"
            },
-           { "title": "Tempora",
-             "author": "UKA-39",
-             "year":"1939"
+		   { "title": "Det bar berdt det UKEbok",
+             "author": "UKA-13",
+             "year":"2013"
            },
-           { "title": "Høstprogram 1981",
-             "author": "Styret",
+		   { "title": "Domino visehefte",
+             "author": "UKA-49",
+             "year":"1949"
+           },
+		   { "title": "Duskedunder - UKA's revy på Edderkoppen",
+             "author": "Det Norske Studentersamfund",
+             "year":"1958"
+           },
+		   { "title": "E'De'Ber visehefte",
+             "author": "UKA-83",
+             "year":"1983"
+           },
+		   { "title": "Engasjement og begerklang. Studentersamfundet i Trondhjem 1910-2010",
+             "author": "Jan Thomas Kobberrød",
+             "year":"2010"
+           },
+		   { "title": "Fabula visehefte",
+             "author": "UKA-93",
+             "year":"1993"
+           },
+		   { "title": "Fan tutte visehefte",
+             "author": "UKA-81",
              "year":"1981"
            },
-           { "title": "Prosjektrapport for oppusing av Strossa",
-             "author": "Arnhild Kjørsvik, Gunnhild Marie Gransæther, Helga Kristine Teige, Sigrid Rossebø Hansen, Synøve Flobak",
-             "year":"2009"
+		   { "title": "Fandango visehefte",
+             "author": "UKA-47",
+             "year":"1947"
            },
-           { "title": "Referat fra finansstyremøte",
-             "author": "Finansstyret",
-             "year":"1946-1954"
+		   { "title": "Festihval program ISFiT 2003",
+             "author": "ISFiT",
+             "year":"2003"
            },
-           { "title": "Husets drift",
-             "author": "Finansstyret",
-             "year":"1930"
+		   { "title": "Filliputt visehefte",
+             "author": "UKA-61",
+             "year":"1961"
+           },
+		   { "title": "Filmprogram høsten 2006",
+             "author": "Studentersamfundet Filmklubb",
+             "year":"2006"
+           },
+		   { "title": "Fortegnelse over medlemmer i foreningen 'Kunst for folket' fra Studentersamfundet i Trondhjem",
+             "author": "Kunst for folket",
+             "year":"1931 - 1932"
+           },
+		   { "title": "Frie penner. Under Dusken 1914-2014",
+             "author": "Thomas Solberg, Joakim Gusland",
+             "year":"2014"
+           },
+		   { "title": "Frihet og rett. Fredssemesteret i Studentersamfundet i Trondhjem 17. mai til 7. juni 1945",
+             "author": "Harald R. Rønneberg",
+             "year":"1945"
+           },
+		   { "title": "Glasur visehefte",
+             "author": "UKA-03",
+             "year":"2003"
+           },
+		   { "title": "Glimt av den store karikatur",
+             "author": "Ole Peder Arvesen",
+             "year":"1941"
+           },
+		   { "title": "Go-A-Head Oslo-turneen",
+             "author": "UKA-41",
+             "year":"1941"
+           },
+		   { "title": "Gustibus visehefte",
+             "author": "UKA-53",
+             "year":"1953"
+           },
+		   { "title": "H.M. Aarhønen - De første 100 år",
+             "author": "H.M. Aarhønen",
+             "year":"2013"
+           },
+		   { "title": "H.M. Aarhønens Rike",
+             "author": "Øyvind Nøttestad",
+             "year":"1966"
+           },
+		   { "title": "Håndbok for Studentersamfundet",
+             "author": "N/A",
+             "year":"1995"
+           },
+		   { "title": "Holdningskamp og motstandsvilje. NTH under krigen",
+             "author": "Prof. Knut Alming, Siv.ing Nils F. Arnesen, Siv.ing Håkon Hartmark, Siv.ing Erik Martin Johanssen, Dr.ing Arne Ytrehus",
+             "year":"1995"
+           },
+		   { "title": "Høstprogram 1981",
+             "author": "N/A",
+             "year":"1981"
+           },
+		   { "title": "Høstprogram 1983",
+             "author": "N/A",
+             "year":"1983"
+           },
+		   { "title": "Høstprogram 1984",
+             "author": "N/A",
+             "year":"1984"
+           },
+		   { "title": "Høstprogram 1993",
+             "author": "N/A",
+             "year":"1993"
            }
+
        ]
     }
 },
@@ -68,7 +230,7 @@
             "Something about the things"
         ],
         "booksButton":"Bøker/Under Dusken",
-        "pictureButton":"Pictures"
+        "pictureButton":"Bilder"
     },
     "pictures":{
         "title":"Pictures",
@@ -90,37 +252,198 @@
            "En beskrivelse av siden"
        ],
        "books":[
-           { "title": "UKA-13 Program",
-             "author": "UKA-13",
+           { "title": "100 år og like leken",
+             "author": "Ragnhild Lian Solbakk m.fl",
+             "year":"2010"
+           },
+           { "title": "'Hjorten' (Trondhjems tivoli) revyviser  utvalg gjennom 40år",
+             "author": "N/A",
+             "year":"N/A"
+           },
+           { "title": "Aarhøneklukk",
+             "author": "Kristian Aunaas m.fl",
+             "year":"2006"
+           },
+           { "title": "Åja visehefte",
+             "author": "UKA-71",
+             "year":"1971"
+           },
+           { "title": "Akademisk radioklubb 52 år. En historie med slagside",
+             "author": "Håkon Solum, Tore Gylver",
+             "year":"1976"
+           },
+           { "title": "Akademiska sångforeningen 1838-1938",
+             "author": "Finn E. Sommerschield",
+             "year":"1938"
+           },
+           { "title": "Alt er sex visehefte",
+             "author": "UKA-97",
+             "year":"1997"
+           },
+		   
+           { "title": "Alt er sex UKEbibel",
+             "author": "UKA-97",
+             "year":"1997"
+           },
+		   { "title": "QST",
+             "author": "N/A",
+             "year":"1946 - 1980"
+           },
+		   { "title": "Årsregnskap",
+             "author": "Samfundet",
+             "year":"1941 - 1980"
+           },
+		   { "title": "Ås studenter i hundre år",
+             "author": "Bernt Karlgård, Bjarne Ljones",
+             "year":"1964"
+           },
+		   { "title": "Bildealbum NTH 50-årsjubileum",
+             "author": "N/A",
+             "year":"N/A"
+           },
+		   { "title": "Bom-t-bom visehefte",
+             "author": "UKA-91",
+             "year":"1991"
+           },
+		   { "title": "Building a future - Final document ISFiT 2009",
+             "author": "N/A",
+             "year":"2009"
+           },
+		   { "title": "Bursdagsmøte oktober 1946",
+             "author": "Styret",
+             "year":"1946"
+           },
+		   { "title": "Cabaret - manus",
+             "author": "N/A",
+             "year":"N/A"
+           },
+		   { "title": "De-Cha-Vi visehefte",
+             "author": "UKA-87",
+             "year":"1987"
+           },
+		   { "title": "Dek-E-Du",
+             "author": "UKA-35",
+             "year":"1935"
+           },
+		   { "title": "Dek-E-Du beretning oppslagsbok",
+             "author": "UKA-35",
+             "year":"1935"
+           },
+		   { "title": "Den gamle sang - 100 år med studentrevymusikk",
+             "author": "Eivind Vrålstad m.fl",
              "year":"2013"
            },
-           { "title": "Teaterprogram UKA",
-             "author": "UKA-13",
-             "year":"2013"
+		   { "title": "Det umulige tar bare litt lengre tid. ISFiT 25 år",
+             "author": "Bertine Tønseth, Elise Farstad Djupedal",
+             "year":"2015"
            },
-           { "title": "Teaterprogram",
+		   { "title": "Det var dette vi lagde UKEbok",
              "author": "UKA-15",
              "year":"2015"
            },
-           { "title": "Tempora",
-             "author": "UKA-39",
-             "year":"1939"
+		   { "title": "Det bar berdt det UKEbok",
+             "author": "UKA-13",
+             "year":"2013"
            },
-           { "title": "Høstprogram 1981",
-             "author": "Styret",
+		   { "title": "Domino visehefte",
+             "author": "UKA-49",
+             "year":"1949"
+           },
+		   { "title": "Duskedunder - UKA's revy på Edderkoppen",
+             "author": "Det Norske Studentersamfund",
+             "year":"1958"
+           },
+		   { "title": "E'De'Ber visehefte",
+             "author": "UKA-83",
+             "year":"1983"
+           },
+		   { "title": "Engasjement og begerklang. Studentersamfundet i Trondhjem 1910-2010",
+             "author": "Jan Thomas Kobberrød",
+             "year":"2010"
+           },
+		   { "title": "Fabula visehefte",
+             "author": "UKA-93",
+             "year":"1993"
+           },
+		   { "title": "Fan tutte visehefte",
+             "author": "UKA-81",
              "year":"1981"
            },
-           { "title": "Prosjektrapport for oppusing av Strossa",
-             "author": "Arnhild Kjørsvik, Gunnhild Marie Gransæther, Helga Kristine Teige, Sigrid Rossebø Hansen, Synøve Flobak",
-             "year":"2009"
+		   { "title": "Fandango visehefte",
+             "author": "UKA-47",
+             "year":"1947"
            },
-           { "title": "Referat fra finansstyremøte",
-             "author": "Finansstyret",
-             "year":"1946-1954"
+		   { "title": "Festihval program ISFiT 2003",
+             "author": "ISFiT",
+             "year":"2003"
            },
-           { "title": "Husets drift",
-             "author": "Finansstyret",
-             "year":"1930"
+		   { "title": "Filliputt visehefte",
+             "author": "UKA-61",
+             "year":"1961"
+           },
+		   { "title": "Filmprogram høsten 2006",
+             "author": "Studentersamfundet Filmklubb",
+             "year":"2006"
+           },
+		   { "title": "Fortegnelse over medlemmer i foreningen 'Kunst for folket' fra Studentersamfundet i Trondhjem",
+             "author": "Kunst for folket",
+             "year":"1931 - 1932"
+           },
+		   { "title": "Frie penner. Under Dusken 1914-2014",
+             "author": "Thomas Solberg, Joakim Gusland",
+             "year":"2014"
+           },
+		   { "title": "Frihet og rett. Fredssemesteret i Studentersamfundet i Trondhjem 17. mai til 7. juni 1945",
+             "author": "Harald R. Rønneberg",
+             "year":"1945"
+           },
+		   { "title": "Glasur visehefte",
+             "author": "UKA-03",
+             "year":"2003"
+           },
+		   { "title": "Glimt av den store karikatur",
+             "author": "Ole Peder Arvesen",
+             "year":"1941"
+           },
+		   { "title": "Go-A-Head Oslo-turneen",
+             "author": "UKA-41",
+             "year":"1941"
+           },
+		   { "title": "Gustibus visehefte",
+             "author": "UKA-53",
+             "year":"1953"
+           },
+		   { "title": "H.M. Aarhønen - De første 100 år",
+             "author": "H.M. Aarhønen",
+             "year":"2013"
+           },
+		   { "title": "H.M. Aarhønens Rike",
+             "author": "Øyvind Nøttestad",
+             "year":"1966"
+           },
+		   { "title": "Håndbok for Studentersamfundet",
+             "author": "N/A",
+             "year":"1995"
+           },
+		   { "title": "Holdningskamp og motstandsvilje. NTH under krigen",
+             "author": "Prof. Knut Alming, Siv.ing Nils F. Arnesen, Siv.ing Håkon Hartmark, Siv.ing Erik Martin Johanssen, Dr.ing Arne Ytrehus",
+             "year":"1995"
+           },
+		   { "title": "Høstprogram 1981",
+             "author": "N/A",
+             "year":"1981"
+           },
+		   { "title": "Høstprogram 1983",
+             "author": "N/A",
+             "year":"1983"
+           },
+		   { "title": "Høstprogram 1984",
+             "author": "N/A",
+             "year":"1984"
+           },
+		   { "title": "Høstprogram 1993",
+             "author": "N/A",
+             "year":"1993"
            }
        ]
     }
