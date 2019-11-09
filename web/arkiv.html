@@ -182,6 +182,12 @@
                 booksButton.innerText = data.booksButton;
                 buttonBox.appendChild(booksButton);
 
+                let audioButton = document.createElement('a');
+                audioButton.setAttribute('href','?lang='+GET.lang+'&page=audio');
+                audioButton.setAttribute('class','button');
+                audioButton.innerText = data.audioButton;
+                buttonBox.appendChild(audioButton);
+
                 content.appendChild(buttonBox);
             }
             else if(GET.page == 'pictures'){
@@ -277,6 +283,22 @@
                 content.appendChild(searchResults);
 
                 searchBooks();
+            }
+            else if(GET.page == 'audio'){
+                data = data.audio;
+                //Create an element and append it to content
+                let header = document.createElement('h1');
+                header.innerText = data.title;
+                content.appendChild(header);
+
+                for(let i = 0; i < data.paragraphs.length; i++){
+                    let para = document.createElement('p');
+                    para.innerText = data.paragraphs[i];
+                    content.appendChild(para);
+                }
+
+                clips = data.audio;
+                content.appendChild(generateAudioGallery(clips));
             }
         }
     </script>
