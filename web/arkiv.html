@@ -161,6 +161,10 @@
             if(GET.page == 'index'){
                 data = data.index;
 
+                let header = document.createElement('h1');
+                header.innerText = data.title;
+                content.appendChild(header);
+
                 for(let i = 0; i < data.paragraphs.length; i++){
                     let para = document.createElement('p');
                     para.innerText = data.paragraphs[i];
