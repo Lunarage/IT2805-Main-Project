@@ -3,12 +3,14 @@ var pictures = [];
 //Global variable to keep track of current open picture
 //Changes when openWindow is called
 var globalIndex = null;
+//Is this identifisering?
+var identifisering = false;
 
 function keyPressPicture(event){
     if(event.key == 'ArrowLeft'){
-        prevPicture();
+        prevPicture(identifisering);
     }else if(event.key == 'ArrowRight'){
-        nextPicture();
+        nextPicture(identifisering);
     }else if(event.key == 'Escape'){
         closeWindow();
     }
@@ -30,10 +32,10 @@ function touchEnd(event){
     if(Math.abs(diffX) > Math.abs(diffY)){
         if(diffX > 10){
         //Right Swipe
-            prevPicture();
+            prevPicture(identifisering);
         }else if(diffX < -10){
         //Left Swipe
-            nextPicture();
+            nextPicture(identifisering);
         }
     }
 
@@ -42,19 +44,18 @@ function touchEnd(event){
     touchY = null;
 }
 
-function nextPicture(){
-    openWindow(globalIndex+1);
+function nextPicture(identifisering = false){
+    openWindow(globalIndex+1, identifisering);
 }
 
-function prevPicture(){
-    openWindow(globalIndex-1);
+function prevPicture(identifisering = false){
+    openWindow(globalIndex-1, identifisering);
 }
 
 function openWindow(index, identifisering = false){
     if(index >= 0 && index < pictures.length){
         //Update global variable to keep track of current open picture
         globalIndex = index;
-        console.log(globalIndex);
         let pictureData = pictures[index];
 
         let container = document.getElementById('popUpContainer');
@@ -75,13 +76,14 @@ function openWindow(index, identifisering = false){
         picture.setAttribute('src',pictureData.picture);
         picture.setAttribute('alt',pictureData.shortDesc);
         picture.setAttribute('id','picture');
+        picture.setAttribute('onLoad', 'resizePicture()');
 
         let leftButton = document.createElement('button');
         leftButton.setAttribute('class','leftArrow');
-        leftButton.setAttribute('onClick','prevPicture()');
+        leftButton.setAttribute('onClick','prevPicture('+identifisering+')');
         let rightButton = document.createElement('button');
         rightButton.setAttribute('class','rightArrow');
-        rightButton.setAttribute('onClick','nextPicture()');
+        rightButton.setAttribute('onClick','nextPicture('+identifisering+')');
 
         let desc = document.createElement('p');
         desc.innerText = pictureData.longDesc;
@@ -108,10 +110,13 @@ function openWindow(index, identifisering = false){
             popUpWindow.appendChild(mailPara);
         }
 
+        resizePicture();
+        // Enable touch and button interaction
         document.addEventListener('keydown',keyPressPicture);
         document.addEventListener('touchstart',touchStart);
         document.addEventListener('touchend',touchEnd);
-        resizePicture();
+        // Disable default scrolling behaviour
+        disableScroll();
     }
 }
 
@@ -119,9 +124,12 @@ function closeWindow(){
     let container = document.getElementById('popUpContainer');
     container.style.zIndex = "-1";
     container.style.visibility = "hidden";
+    // Disable touch and button interaction
     document.removeEventListener('keydown',keyPressPicture);
     document.removeEventListener('touchstart',touchStart);
     document.removeEventListener('touchend',touchEnd);
+    // Reenable default scrolling behaviour
+    enableScroll();
 }
 
 function resizePicture(){
@@ -144,5 +152,20 @@ function resizePicture(){
     }
 }
 
-window.onresize = resizePicture;
+function preventDefault(event){
+    event.preventDefault();
+}
 
+function disableScroll(){
+    window.addEventListener('wheel', preventDefault, {passive: false});
+    window.onWheel = preventDefault;
+    window.onTouchMove = preventDefault;
+}
+
+function enableScroll(){
+    window.removeEventListener('wheel', preventDefault, {passive: false});
+    window.onWheel = null;
+    window.onTouchMove = null;
+}
+
+window.onresize = resizePicture;
