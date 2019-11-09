@@ -3,7 +3,7 @@
     "index":{
         "title":"Identification",
         "paragraphs":[
-            "Something about the things"
+            "Some of the things we recieve or that have been around for some time is not documented as well. We put tings here to make it easier for people not in the Archive to help us fill in the gaps"
         ],
         "audioButton":"Audio",
         "pictureButton":"Pictures"
@@ -11,7 +11,7 @@
     "pictures":{
         "title":"Pictures",
         "paragraphs":[
-            "Something about the pictures"
+            "These are unidentified pictures. If you know anything about any of them, please send us an e-mail with the title of the picture in the subject field."
         ],
         "pictures":[
             {"title":"idb-001",
@@ -133,7 +133,7 @@
     "audio":{
         "title":"Audio",
         "paragraphs":[
-            "Something about the audio clips"
+            "These are unidentified audio clips. If you know anything about any of them, please send us an e-mail with the title of the audio clip in the subject field."
         ],
         "audio":[
             {"title":"Alt er sex",
@@ -154,7 +154,7 @@
     "index":{
         "title":"Identifisering",
         "paragraphs":[
-            "Something about the things"
+            "Deler av det vi får inn eller som har ligget en stund er ikke dokumenter så bra. Her legger vi ut ting for å gjøre det enkelt for folk utenfor Arkivet til å hjelpe til å fylle inn hullene."
         ],
         "audioButton":"Lydklipp",
         "pictureButton":"Bilder"
@@ -162,7 +162,7 @@
     "pictures":{
         "title":"Bilder",
         "paragraphs":[
-            "Something about the pictures"
+            "Dette er uidentifiserte bilder. Hvis du vet noe om noen av disse bildene, send oss en e-post med bildetittelen i emnefeltet."
         ],
         "pictures":[
             {"title":"idb-001",
