@@ -1,56 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel='stylesheet' type='text/css' href='css/style.css'>
-    <link rel='icon' href='media/icons/favicon_samfundet.ico'>
-    <script src='js/functions.js'></script>
-    <script src='js/elementManipulators.js'></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="media/icons/favicon_samfundet.ico" />
+    <script src="js/functions.js"></script>
+    <script src="js/galleryGenerator.js"></script>
+    <script src="js/popUpWindow.js"></script>
+    <script src="js/elementManipulators.js"></script>
     <title>Arkivet</title>
     <script>
-        var GET = getGETvalues();
+      var GET = getGETvalues();
+      //Default the language to norwegian unless specified
+      if (!GET.lang) {
+        GET.lang = "no";
+      }
 
-        //Default the language to norwegian unless specified
-        if(!GET.lang){
-            GET.lang = "no";
+      var data = {};
+
+      this.state = {
+        showAlbum: false
+      };
+
+      function handleClick() {
+        this.state.showAlbum = !this.state.showAlbum;
+        if (this.state.showAlbum) {
+          album.style.display = "block";
+        } else {
+          album.style.display = "none";
+        }
+      }
+
+      let album = document.createElement("div");
+
+      function renderPage() {
+        //Where we want to put new elements
+        let content = document.getElementById("content");
+
+        //clear the previous content
+        content.innerHTML = "";
+
+        //Choose language
+        if (GET.lang == "no") {
+          data = data.no;
+        } else if (GET.lang == "en") {
+          data = data.en;
         }
 
-        var data = {};
+        //Create an element and append it to content
+        let header = document.createElement("h1");
+        header.innerText = data.title;
+        content.appendChild(header);
 
-        function renderPage(){
-            //Where we want to put new elements
-            let content = document.getElementById('content');
-
-            //clear the previous content
-            content.innerHTML = "";
-
-            //Choose language
-            if(GET.lang == "no"){
-                data = data.no;
-            }else if(GET.lang == "en"){
-                data = data.en;
-            }
-
-            //Create an element and append it to content
-            let header = document.createElement('h1');
-            header.innerText = data.title;
-            content.appendChild(header);
-
-            for(let i = 0; i < data.paragraphs.length; i++){
-                let para = document.createElement('p');
-                para.innerText = data.paragraphs[i];
-                content.appendChild(para);
-            }
+        for (let i = 0; i < data.paragraphs.length; i++) {
+          let para = document.createElement("p");
+          para.innerText = data.paragraphs[i];
+          content.appendChild(para);
         }
+
+        let albumButton = document.createElement("button");
+        albumButton.setAttribute("onclick", "handleClick()");
+        albumButton.setAttribute("id", "albumButton");
+        albumButton.innerText = data.albumButton;
+        content.appendChild(albumButton);
+
+        // let album = document.createElement("div");
+        album.style.display = "none";
+        content.appendChild(album);
+
+        data = data.album;
+        //Create an element and append it to content
+        let title = document.createElement("h2");
+        title.innerText = data.title;
+        album.appendChild(title);
+
+        for (let i = 0; i < data.paragraphs.length; i++) {
+          let para = document.createElement("p");
+          para.innerText = data.paragraphs[i];
+          album.appendChild(para);
+        }
+
+        pictures = data.pictures;
+        album.appendChild(generatePictureGallery(pictures));
+      }
     </script>
-</head>
-<body>
-    <div id='container'>
-        <header id='header'><script>getHeader('navHjelpOss')</script></header>
-        <div id='content'><script>getData('data/hjelp_oss.json')</script></div>
-        <footer id='footer'><script>getFooter()</script></footer>
+  </head>
+  <body>
+    <div id="popUpContainer" style="visibility:hidden">
+      <div id="popUpWindow"></div>
     </div>
-</body>
+    <div id="container">
+      <header id="header">
+        <script>
+          getHeader("navHjelpOss");
+        </script>
+      </header>
+      <div id="content">
+        <script>
+          getData("data/hjelp_oss.json");
+        </script>
+      </div>
+      <footer id="footer">
+        <script>
+          getFooter();
+        </script>
+      </footer>
+    </div>
+  </body>
 </html>
