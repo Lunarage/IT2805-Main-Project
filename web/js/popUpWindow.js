@@ -86,19 +86,27 @@ function openWindow(index, identifisering = false){
         let desc = document.createElement('p');
         desc.innerText = pictureData.longDesc;
 
-        let emailDesc = document.createElement('p');
-        if(GET.lang = 'no'){
-            emailDesc.innerText = 'Hvis du vet noe om dette bildet, send oss gjerne en e-post';
-        }else if(GET.lang = 'en'){
-            emailDesc.innerText = 'If you know something about this picture, please send us an e-mail';
-        }
-
         popUpWindow.appendChild(title);
         popUpWindow.appendChild(leftButton);
         popUpWindow.appendChild(picture);
         popUpWindow.appendChild(rightButton);
         popUpWindow.appendChild(desc);
-        popUpWindow.appendChild(emailDesc);
+
+        if(identifisering){
+            let mailPara = document.createElement('p');
+            let mailLink = document.createElement('a');
+            mailLink.setAttribute('href','mailto:arkivet@samfundet.no?Subject=['+pictureData.title+']');
+            mailLink.setAttribute('target','_blank');
+            if(GET.lang == 'no'){
+                mailPara.innerText = "Hvis du vet noe om dette bildet, ";
+                mailLink.innerText = "send oss en e-post";
+            }else if(GET.lang == 'en'){
+                mailPara.innerText = "If you know anything about this picture, ";
+                mailLink.innerText = "send us an e-mail";
+            }
+            mailPara.appendChild(mailLink);
+            popUpWindow.appendChild(mailPara);
+        }
 
         document.addEventListener('keydown',keyPressPicture);
         document.addEventListener('touchstart',touchStart);
