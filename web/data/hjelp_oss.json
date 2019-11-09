@@ -3,30 +3,219 @@
     "title":"Help Us",
     "paragraphs":[
     "Donate to the Archive!",
-    "We accept just about anything Samfundet related, if we allready have it we distribute it amongst the voulenteres at Samfundet. /n Here you can find a list over thing we know we need, but if you have something that isnt on the list just send us an email at arkivet@samfundet.no or mail it to us at: \n \n Arkivet v/Samfundet i Trondhjem \n Elgeseter gate 1, 7030 Trondheim \n\n",
+    "We accept just about anything Samfundet related, if we allready have it we distribute it amongst the voulenteres at Samfundet. \n Here you can find a list over thing we know we need, but if you have something that isnt on the list just send us an email at arkivet@samfundet.no or mail it to us at: \n \n Arkivet v/Samfundet i Trondhjem \n Elgeseter gate 1, 7030 Trondheim \n\n",
 	"Things the Archive needs:",
 	"Medals from UKA, all of them always. But those we don't have at all is in the album benath.",
 	"- This is just a placeholder :) ",
 	"- Ditto ^ "
     ],
-  "albumButton": "Show daljealbum",
+    "albumButton": "Show daljealbum",
     "album": {
       "title": "Daljealbum",
-      "paragraphs": ["This is an album"],
+      "paragraphs": ["These are the medals we would like donated."],
       "pictures": [
         {
-          "title": "Dalje 1",
-          "shortDesc": "This is a dalje we miss in our collection",
-          "longDesc": "This is a dalje we miss in our collection, please give one to us",
-          "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-          "picture": "media/pictures/placeholder.jpg"
+          "title": "50 år",
+          "shortDesc": "Dalje 50 år, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje 50 år, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/50aar.jpg",
+          "thumbnail": "media/pictures/50aar_thumbnail.jpg"
         },
         {
-          "title": "Dalje 2",
-          "shortDesc": "This is a dalje we miss in our collection",
-          "longDesc": "This is a dalje we miss in our collection, please give one to us",
-          "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-          "picture": "media/pictures/placeholder.jpg"
+          "title": "Åja Turné",
+          "shortDesc": "Dalje Åja Turné, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Åja Turné, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/aaja_turne.jpg",
+          "thumbnail": "media/pictures/aaja_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Akk-a-mei",
+          "shortDesc": "Dalje Akk-a-mei, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Akk-a-mei, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/akkamei.jpg",
+          "thumbnail": "media/pictures/akkamei_thumbnail.jpg"
+        },
+        {
+          "title": "Akk-a-mei Turné",
+          "shortDesc": "Dalje Akk-a-mei, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Akk-a-mei, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/akkamei_turne.jpg",
+          "thumbnail": "media/pictures/akkamei_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Baccarat",
+          "shortDesc": "Dalje Akk-a-mei, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Akk-a-mei, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/baccarat.jpg",
+          "thumbnail": "media/pictures/baccarat_thumbnail.jpg"
+        },
+        {
+          "title": "Charivari",
+          "shortDesc": "Dalje Charivari, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Charivari, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/carivari.jpg",
+          "thumbnail": "media/pictures/carivari_thumbnail.jpg"
+        },
+        {
+          "title": "Cassa Rossa",
+          "shortDesc": "Dalje Cassa Rossa, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Cassa Rossa, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/cassarossa.jpg",
+          "thumbnail": "media/pictures/cassarossa_thumbnail.jpg"
+        },
+        {
+          "title": "Domino Turné",
+          "shortDesc": "Dalje Domino Turné, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Domino Turné, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/domino_turne.jpg",
+          "thumbnail": "media/pictures/domino_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Filliputt Turné",
+          "shortDesc": "Dalje Filliputt Turné, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Filliputt Turné, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/filliputt_turne.jpg",
+          "thumbnail": "media/pictures/filliputt_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Gustibus Turné",
+          "shortDesc": "Dalje Gustibus Turné, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Gustibus Turné, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/gustibus_turne.jpg",
+          "thumbnail": "media/pictures/gustibus_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Gustibus",
+          "shortDesc": "Dalje Gustibus, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Gustibus, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/gustibus.jpg",
+          "thumbnail": "media/pictures/gustibus_thumbnail.jpg"
+        },
+        {
+          "title": "Huttetu",
+          "shortDesc": "Dalje Huttetu, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Huttetu, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/huttetu.jpg",
+          "thumbnail": "media/pictures/huttetu_thumbnail.jpg"
+        },
+        {
+          "title": "Jazz",
+          "shortDesc": "Dalje Jazz, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Jazz, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/jazz.jpg",
+          "thumbnail": "media/pictures/jazz_thumbnail.jpg"
+        },
+        {
+          "title": "Krussedull",
+          "shortDesc": "Dalje Krussedull, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Krussedull, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/krussedull.jpg",
+          "thumbnail": "media/pictures/krussedull_thumbnail.jpg"
+        },
+        {
+          "title": "Krussedull Turné",
+          "shortDesc": "Dalje Krussedull, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Krussedull, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/krussedull_turne.jpg",
+          "thumbnail": "media/pictures/krussedull_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Mammon-Ra",
+          "shortDesc": "Dalje Mammon-Ra, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Mammon-Ra, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/mamonra.jpg",
+          "thumbnail": "media/pictures/mamonra_thumbnail.jpg"
+        },
+        {
+          "title": "Mammon-Ra Turné",
+          "shortDesc": "Dalje Mammon-Ra Turné, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Mammon-Ra Turné, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/mamonra_turne.jpg",
+          "thumbnail": "media/pictures/mamonra_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Maxis",
+          "shortDesc": "Dalje Maxis, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Maxis, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/maxis.jpg",
+          "thumbnail": "media/pictures/maxis_thumbnail.jpg"
+        },
+        {
+          "title": "Merry Go Round",
+          "shortDesc": "Dalje Merry Go Round, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Merry Go Round, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/merrygoround.jpg",
+          "thumbnail": "media/pictures/merrygoround_thumbnail.jpg"
+        },
+        {
+          "title": "Næmesis",
+          "shortDesc": "Dalje Næmesis, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Næmesis, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/naemesis.jpg",
+          "thumbnail": "media/pictures/naemesis_thumbnail.jpg"
+        },
+        {
+          "title": "Næmesis 2",
+          "shortDesc": "Dalje Næmesis 2, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Næmesis 2, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/naemesis2.jpg",
+          "thumbnail": "media/pictures/naemesis2_thumbnail.jpg"
+        },
+        {
+          "title": "Næmesis Turné",
+          "shortDesc": "Dalje Næmesis Turné, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Næmesis Turné, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/naemesis_turne.jpg",
+          "thumbnail": "media/pictures/naemesis_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Rah-ta-tah",
+          "shortDesc": "Dalje Rah-ta-tah, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Rah-ta-tah, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/ratatah.jpg",
+          "thumbnail": "media/pictures/ratatah_thumbnail.jpg"
+        },
+        {
+          "title": "Sirkuss",
+          "shortDesc": "Dalje Sirkuss, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Sirkuss, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/sirkus.jpg",
+          "thumbnail": "media/pictures/sirkus_thumbnail.jpg"
+        },
+        {
+          "title": "Sirkuss Turné",
+          "shortDesc": "Dalje Sirkuss Turné, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Sirkuss Turné, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/sirkus_turne.jpg",
+          "thumbnail": "media/pictures/sirkus_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Tempora",
+          "shortDesc": "Dalje Tempora, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Tempora, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/tempora.jpg",
+          "thumbnail": "media/pictures/tempora_thumbnail.jpg"
+        },
+        {
+          "title": "Tempora 2",
+          "shortDesc": "Dalje Tempora 2, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Tempora 2, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/tempora2.jpg",
+          "thumbnail": "media/pictures/tempora2_thumbnail.jpg"
+        },
+        {
+          "title": "Tempora Turné",
+          "shortDesc": "Dalje Tempora Turné, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Tempora Turné, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/tempora_turne.jpg",
+          "thumbnail": "media/pictures/tempora_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Vau-de-ville",
+          "shortDesc": "Dalje Vau-de-ville, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Vau-de-ville, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/vaudeville.jpg",
+          "thumbnail": "media/pictures/vaudeville_thumbnail.jpg"
         }
       ]
     }
@@ -44,21 +233,210 @@
   "albumButton": "Vis daljealbum",
     "album": {
       "title": "Daljealbum",
-      "paragraphs": ["Dette albumet viser bilder vi mangler i vår samling"],
+      "paragraphs": ["Dette albumet viser bilder av ting vi mangler i vår samling"],
       "pictures": [
         {
-          "title": "Dalje 1",
-          "shortDesc": "Dette er en dalje vi mangler",
-          "longDesc": "Dette er en dalje vi mangler, hvis du har en ekstra så vil Arkivet gjerne ha den",
-          "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-          "picture": "media/pictures/placeholder.jpg"
+          "title": "50 år",
+          "shortDesc": "Dalje 50 år, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje 50 år, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/50aar.jpg",
+          "thumbnail": "media/pictures/50aar_thumbnail.jpg"
         },
         {
-          "title": "Dalje 2",
-          "shortDesc": "Dette er en dalje vi mangler",
-          "longDesc": "Dette er en dalje vi mangler, hvis du har en ekstra så vil Arkivet gjerne ha den",
-          "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
-          "picture": "media/pictures/placeholder.jpg"
+          "title": "Åja Turné",
+          "shortDesc": "Dalje Åja Turné, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Åja Turné, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/aaja_turne.jpg",
+          "thumbnail": "media/pictures/aaja_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Akk-a-mei",
+          "shortDesc": "Dalje Akk-a-mei, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Akk-a-mei, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/akkamei.jpg",
+          "thumbnail": "media/pictures/akkamei_thumbnail.jpg"
+        },
+        {
+          "title": "Akk-a-mei Turné",
+          "shortDesc": "Dalje Akk-a-mei, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Akk-a-mei, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/akkamei_turne.jpg",
+          "thumbnail": "media/pictures/akkamei_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Baccarat",
+          "shortDesc": "Dalje Akk-a-mei, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Akk-a-mei, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/baccarat.jpg",
+          "thumbnail": "media/pictures/baccarat_thumbnail.jpg"
+        },
+        {
+          "title": "Charivari",
+          "shortDesc": "Dalje Charivari, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Charivari, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/carivari.jpg",
+          "thumbnail": "media/pictures/carivari_thumbnail.jpg"
+        },
+        {
+          "title": "Cassa Rossa",
+          "shortDesc": "Dalje Cassa Rossa, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Cassa Rossa, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/cassarossa.jpg",
+          "thumbnail": "media/pictures/cassarossa_thumbnail.jpg"
+        },
+        {
+          "title": "Domino Turné",
+          "shortDesc": "Dalje Domino Turné, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Domino Turné, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/domino_turne.jpg",
+          "thumbnail": "media/pictures/domino_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Filliputt Turné",
+          "shortDesc": "Dalje Filliputt Turné, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Filliputt Turné, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/filliputt_turne.jpg",
+          "thumbnail": "media/pictures/filliputt_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Gustibus Turné",
+          "shortDesc": "Dalje Gustibus Turné, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Gustibus Turné, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/gustibus_turne.jpg",
+          "thumbnail": "media/pictures/gustibus_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Gustibus",
+          "shortDesc": "Dalje Gustibus, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Gustibus, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/gustibus.jpg",
+          "thumbnail": "media/pictures/gustibus_thumbnail.jpg"
+        },
+        {
+          "title": "Huttetu",
+          "shortDesc": "Dalje Huttetu, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Huttetu, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/huttetu.jpg",
+          "thumbnail": "media/pictures/huttetu_thumbnail.jpg"
+        },
+        {
+          "title": "Jazz",
+          "shortDesc": "Dalje Jazz, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Jazz, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/jazz.jpg",
+          "thumbnail": "media/pictures/jazz_thumbnail.jpg"
+        },
+        {
+          "title": "Krussedull",
+          "shortDesc": "Dalje Krussedull, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Krussedull, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/krussedull.jpg",
+          "thumbnail": "media/pictures/krussedull_thumbnail.jpg"
+        },
+        {
+          "title": "Krussedull Turné",
+          "shortDesc": "Dalje Krussedull, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Krussedull, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/krussedull_turne.jpg",
+          "thumbnail": "media/pictures/krussedull_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Mammon-Ra",
+          "shortDesc": "Dalje Mammon-Ra, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Mammon-Ra, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/mamonra.jpg",
+          "thumbnail": "media/pictures/mamonra_thumbnail.jpg"
+        },
+        {
+          "title": "Mammon-Ra Turné",
+          "shortDesc": "Dalje Mammon-Ra Turné, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Mammon-Ra Turné, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/mamonra_turne.jpg",
+          "thumbnail": "media/pictures/mamonra_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Maxis",
+          "shortDesc": "Dalje Maxis, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Maxis, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/maxis.jpg",
+          "thumbnail": "media/pictures/maxis_thumbnail.jpg"
+        },
+        {
+          "title": "Merry Go Round",
+          "shortDesc": "Dalje Merry Go Round, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Merry Go Round, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/merrygoround.jpg",
+          "thumbnail": "media/pictures/merrygoround_thumbnail.jpg"
+        },
+        {
+          "title": "Næmesis",
+          "shortDesc": "Dalje Næmesis, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Næmesis, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/naemesis.jpg",
+          "thumbnail": "media/pictures/naemesis_thumbnail.jpg"
+        },
+        {
+          "title": "Næmesis 2",
+          "shortDesc": "Dalje Næmesis 2, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Næmesis 2, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/naemesis2.jpg",
+          "thumbnail": "media/pictures/naemesis2_thumbnail.jpg"
+        },
+        {
+          "title": "Næmesis Turné",
+          "shortDesc": "Dalje Næmesis Turné, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Næmesis Turné, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/naemesis_turne.jpg",
+          "thumbnail": "media/pictures/naemesis_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Rah-ta-tah",
+          "shortDesc": "Dalje Rah-ta-tah, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Rah-ta-tah, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/ratatah.jpg",
+          "thumbnail": "media/pictures/ratatah_thumbnail.jpg"
+        },
+        {
+          "title": "Sirkuss",
+          "shortDesc": "Dalje Sirkuss, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Sirkuss, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/sirkus.jpg",
+          "thumbnail": "media/pictures/sirkus_thumbnail.jpg"
+        },
+        {
+          "title": "Sirkuss Turné",
+          "shortDesc": "Dalje Sirkuss Turné, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Sirkuss Turné, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/sirkus_turne.jpg",
+          "thumbnail": "media/pictures/sirkus_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Tempora",
+          "shortDesc": "Dalje Tempora, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Tempora, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/tempora.jpg",
+          "thumbnail": "media/pictures/tempora_thumbnail.jpg"
+        },
+        {
+          "title": "Tempora 2",
+          "shortDesc": "Dalje Tempora 2, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Tempora 2, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/tempora2.jpg",
+          "thumbnail": "media/pictures/tempora2_thumbnail.jpg"
+        },
+        {
+          "title": "Tempora Turné",
+          "shortDesc": "Dalje Tempora Turné, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Tempora Turné, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/tempora_turne.jpg",
+          "thumbnail": "media/pictures/tempora_turne_thumbnail.jpg"
+        },
+        {
+          "title": "Vau-de-ville",
+          "shortDesc": "Dalje Vau-de-ville, Foto: foto.samfundet.no.",
+          "longDesc": "Dalje Vau-de-ville, Foto: foto.samfundet.no.",
+          "picture": "media/pictures/daljer/vaudeville.jpg",
+          "thumbnail": "media/pictures/vaudeville_thumbnail.jpg"
         }
       ]
     }
