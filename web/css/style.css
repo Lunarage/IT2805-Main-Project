@@ -150,7 +150,7 @@ nav>a.selected:before{
     background-image: url('../media/icons/flag-for-united-kingdom.png');
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1024px){
     nav{
         display: flex;
         flex-flow: row nowrap;
@@ -277,28 +277,6 @@ div.samfundet{
     padding: 16px;
 }
 
-@media only screen and (max-width: 1280px){
-    #container{
-        width: 95%;
-    }
-
-    
-}
-
-/* mobile phones*/
-@media only screen and (max-width: 600px){
-    #container{
-        position: relative;
-        width: 100%;
-        margin: 0;
-        min-height: 100vh;
-        padding-bottom: var(--footer-height);
-    }
-    
-    #content{
-        padding: 8px;
-    }
-}
 
 #content:after{
     content: "";
@@ -322,16 +300,6 @@ div.samfundet{
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 1280px){
-    #leftcolumn{
-        width:100%;
-    }
-
-    #rightcolumn{
-        width:100%;
-    }
-}
-
 #rightcolumn>h1{
     text-align:center;
 }
@@ -353,6 +321,39 @@ div.samfundet{
     grid-column: 2 / span 1;
     margin: 0;
     padding: 8px 16px;
+}
+
+@media only screen and (max-width: 1280px){
+    #container{
+        width: 95%;
+    }
+
+    
+}
+
+@media only screen and (max-width: 1024px){
+    #rightcolumn{
+        width: 100%;
+    }
+    #leftcolumn{
+        width: 100%;
+    }
+    
+}
+
+/* mobile */
+@media only screen and (max-width: 600px){
+    #container{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        min-height: 100vh;
+        padding-bottom: var(--footer-height);
+    }
+    
+    #content{
+        padding: 8px;
+    }
 }
 
 /* }}} */
