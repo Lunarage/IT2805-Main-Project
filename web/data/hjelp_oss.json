@@ -8,8 +8,28 @@
 	"Medals from UKA, all of them always. But those we don't have at all is in the album benath.",
 	"- This is just a placeholder :) ",
 	"- Ditto ^ "
-	
-    ]
+    ],
+  "albumButton": "Show daljealbum",
+    "album": {
+      "title": "Daljealbum",
+      "paragraphs": ["This is an album"],
+      "pictures": [
+        {
+          "title": "Dalje 1",
+          "shortDesc": "This is a dalje we miss in our collection",
+          "longDesc": "This is a dalje we miss in our collection, please give one to us",
+          "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+          "picture": "media/pictures/placeholder.jpg"
+        },
+        {
+          "title": "Dalje 2",
+          "shortDesc": "This is a dalje we miss in our collection",
+          "longDesc": "This is a dalje we miss in our collection, please give one to us",
+          "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+          "picture": "media/pictures/placeholder.jpg"
+        }
+      ]
+    }
 },
 "no":{
     "title":"Hjelp Oss",
@@ -20,6 +40,26 @@
 	"- Ukedaljer, alle alltid, men oversikt over de som mangler helt fra samlinga ligger i albumet under\n",
 	"- Jeg bare skriver dette som en placeholder altså \n",
 	"- Ditto ^ \n"
-    ]
-}
+    ],
+  "albumButton": "Vis daljealbum",
+    "album": {
+      "title": "Daljealbum",
+      "paragraphs": ["Dette albumet viser bilder vi mangler i vår samling"],
+      "pictures": [
+        {
+          "title": "Dalje 1",
+          "shortDesc": "Dette er en dalje vi mangler",
+          "longDesc": "Dette er en dalje vi mangler, hvis du har en ekstra så vil Arkivet gjerne ha den",
+          "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+          "picture": "media/pictures/placeholder.jpg"
+        },
+        {
+          "title": "Dalje 2",
+          "shortDesc": "Dette er en dalje vi mangler",
+          "longDesc": "Dette er en dalje vi mangler, hvis du har en ekstra så vil Arkivet gjerne ha den",
+          "thumbnail": "media/pictures/placeholder_thumbnail.jpg",
+          "picture": "media/pictures/placeholder.jpg"
+        }
+      ]
+    }
 }

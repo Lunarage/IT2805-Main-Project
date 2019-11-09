@@ -5,7 +5,8 @@
             "Something about the things"
         ],
         "booksButton":"Books/Under Dusken",
-        "pictureButton":"Pictures"
+        "pictureButton":"Pictures",
+        "audioButton": "Audio"
     },
     "pictures":{
         "title":"Pictures",
@@ -222,6 +223,19 @@
            }
 
        ]
+    },
+    "audio":{
+        "title":"Audio",
+        "paragraphs":[
+            "Something about the audio clips"
+        ],
+        "audio":[
+            {"title":"Audio Clip",
+             "shortDesc": "This is an audio clip",
+             "longDesc": "This audio clip is an unidentified clip from some time",
+             "audio": "media/audio/placeholder.mp3"
+            }
+        ]
     }
 },
 "no":{
@@ -230,7 +244,8 @@
             "Something about the things"
         ],
         "booksButton":"Bøker/Under Dusken",
-        "pictureButton":"Bilder"
+        "pictureButton":"Bilder",
+        "audioButton": "Lydklipp"
     },
     "pictures":{
         "title":"Pictures",
@@ -446,6 +461,19 @@
              "year":"1993"
            }
        ]
+    },
+    "audio":{
+        "title":"Lydklipp",
+        "paragraphs":[
+            "Something about the audio clips"
+        ],
+        "audio":[
+            {"title":"Lydklipp",
+             "shortDesc": "Dette er et lydklipp",
+             "longDesc": "This audio clip is an unidentified clip from some time",
+             "audio": "media/audio/placeholder.mp3"
+            }
+        ]
     }
 }
 }
