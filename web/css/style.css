@@ -28,7 +28,9 @@
 
 body {
   font-family: var(--main-font);
+  font-size: 18px;
   background-color: var(--gray);
+  color: var(--dark);
   padding: 0;
   margin: 0;
 }
@@ -465,7 +467,7 @@ div.audioGallery {
   max-width: 100vw;
 
   margin: auto;
-  padding: 16px;
+  padding: 8px;
   border-radius: 5px;
   background: var(--light-bg);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.5);
@@ -475,7 +477,7 @@ div.audioGallery {
   text-align: center;
   width: 100%;
   margin: 0;
-  padding-bottom: 16px;
+  padding-bottom: 4px;
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
 }
@@ -504,7 +506,7 @@ div.audioGallery {
   grid-column: 2 / span 1;
   /* grid-row: 3 / span 1; */
   margin: 0;
-  padding: 8px;
+  padding: 4px;
 }
 
 #popUpWindow .leftArrow {
@@ -513,7 +515,7 @@ div.audioGallery {
   width: 0;
   height: 0;
   padding: 0;
-  margin-right: 8px;
+  margin-right: 4px;
   background: transparent;
   border-top: transparent solid 25px;
   border-bottom: transparent solid 25px;
@@ -528,7 +530,7 @@ div.audioGallery {
   width: 0;
   height: 0;
   padding: 0;
-  margin-left: 8px;
+  margin-left: 4px;
   background: transparent;
   border-top: transparent solid 25px;
   border-bottom: transparent solid 25px;
