@@ -50,7 +50,7 @@ function getHeader(page){
             let menuButton = document.getElementById('menuButton');
             if(GET.lang == 'no'){
                 //Set HTML attribute lang to approriate language
-                document.documentElement.setAttribute('lang','no_NB');
+                document.documentElement.setAttribute('lang','no');
                 addClass(langButton.id, 'en')
                 langButton.setAttribute('href','?lang=en');
                 langButton.innerText = 'English';
