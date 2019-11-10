@@ -624,6 +624,10 @@ button:not([class]) {
 
 /* {{{ Outputs */
 
+#searchResults{
+    overflow-x: auto;
+}
+
 #searchResults table {
   border-spacing: 0;
 }
@@ -634,6 +638,10 @@ button:not([class]) {
 
 #searchResults table tr:nth-child(2n-1){
     background-color: var(--light-bg);
+}
+
+#searchResults table th:nth-child(3){
+    min-width: 80px;
 }
 
 #searchResults td,

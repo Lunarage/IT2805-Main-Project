@@ -39,15 +39,28 @@
     <p>
         A search button was added to the written material part.
         We simply forgot to think about this in the design phase.
+        The table for displaying the data was also changed to match the data we received form the customer and to increase readability.
+        A page for audio was also requested to be added.
+        We simply based this page on the audio page from the identification page.
     </p>
     <h3>Changes to daljer.html</h3>
     <p>
         The need for this page was miscommunicated and has thus been redefined.
         This page should contain a header and some paragraphs.
+        This page could have better structuring if we had received the content earlier.
     </p>
     <h3>Changes to hjelp_oss.html</h3>
     <p>
         The customer requested that an album is to be added with pictures of objects they want donated.
+        This request was made close to the deadline, and the implementation can thus seem a bit rushed.
+        We see this as a valuable experience as we believe this can and will occur in the industry.
+    </p>
+    <h2>Comments on design decisions</h2>
+    <p>
+        Some of the content was delivered to us by Arkivet close to the deadline.
+        This is probably because of UKA.
+        Due to poor communication from their side, some of the content we received was formatted a bit differently than what we expected.
+        This lead to a lot of extra work and some rushed implementation.
     </p>
 </section>
 
@@ -69,6 +82,69 @@
 </section>
 
 <section>
+    <h2>Updated Organizational Scheme</h2>
+    <ul>
+        <li>/css
+        <ul>
+            <li>style.css</li>
+        </ul>
+        </li>
+        <li>/data
+        <ul>
+            <li>arkiv.json</li>
+            <li>daljer.json</li>
+            <li>hjelp_oss.json</li>
+            <li>identifisering.json</li>
+            <li>index.json</li>
+            <li>kontakt.json</li>
+        </ul>
+        </li>
+        <li>/js
+        <ul>
+            <li>functions.js</li>
+            <li>popUpWindow.js</li>
+            <li>galleryGenerator.js</li>
+            <li>elementManipulators.js</li>
+        </ul>
+        <li>/media
+        <ul>
+            <li>/audio
+            <ul>
+                <li>(provided by the customer)</li>
+            </ul></li>
+            <li>/icons
+            <ul>
+                <li>close.svg</li>
+                <li>favicon_samfundet.ico</li>
+                <li>flag-for-norway.png</li>
+                <li>flag-for-united-kingdom.png</li>
+                <li>hamburger.svg</li>
+                <li>play.svg</li>
+                <li>samfundet_logo_med_tekst.svg</li>
+                <li>samfundet.svg</li>
+                <li>sort-down.svg</li>
+                <li>sort-up.svg</li>
+                <li>stats.svg</li>
+            </ul>
+            </li>
+            <li>/pictures
+            <ul>
+                <li>(provided by the customer)</li>
+            </ul></li>
+        </ul>
+        </li>
+        <li>/modules
+        <ul>
+            <li>header.html</li>
+            <li>footer.html</li>
+        </ul>
+        <li>arkiv.html</li>
+        <li>daljer.html</li>
+        <li>hjelp_oss.html</li>
+        <li>identifisering.html</li>
+        <li>index.html</li>
+        <li>kontakt.html</li>
+    </ul>
     <h2>Final Work Division</h2>
     <table>
         <tr>
@@ -142,7 +218,7 @@
         XMLHttpRequests are also supported by essentially all browsers.
         The header and footer is stored in separate files as indicated in the organizational scheme.
         The same method was used to retrieve data from json files.
-        When this project is finished, the json data files will be replaced by a back end, using PostgreSQL and PHP, that essentially sends data in the same json format.
+        When this project is finished, the json data files will be replaced by back end scrips, probably using PostgreSQL and PHP, that essentially sends data in the same json format.
     </p>
 </section>
 
